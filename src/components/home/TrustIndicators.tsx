@@ -19,11 +19,11 @@ const trustedPartners = [
   ...(FEATURES.vigLogo
     ? [
         { name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" },
-        { name: "Exponea", logo: exponeaLogo, url: "https://www.bloomreach.com/" },
         { name: "Slovenská Advokátska Komora", logo: sakLogo, url: "https://www.sak.sk/", large: true },
       ]
     : []),
 
+  { name: "Exponea", logo: exponeaLogo, url: "https://www.bloomreach.com/" },
   { name: "Intesoft", logo: intesoftLogo, url: "https://www.intesoft.eu/" },
   { name: "netPoint", logo: netpointLogo, url: "https://www.netpoint.sk/" },
   { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/", darkTile: true },
