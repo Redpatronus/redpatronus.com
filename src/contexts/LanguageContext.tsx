@@ -1026,9 +1026,9 @@ const translations: Record<Language, Record<string, any>> = {
       contactUs: "Kontaktieren Sie uns",
     },
     hero: {
-      highlight1: "DORA Konform",
-      highlight2: "Zertifizierte Experten",
-      highlight3: "24/7 Support",
+      highlight1: "DORA-konforme Sicherheitskontrollen",
+      highlight2: "Cloud-zertifizierte Security-Spezialisten",
+      highlight3: "24/7 Incident Response für Enterprise",
       title: "Cybersicherheit auf Enterprise-Niveau.\nVertrauenswürdig.\nSicher.\nKonform.",
       subtitle:
         "Schutz Ihrer digitalen Vermögenswerte mit modernsten Sicherheitsdiensten, Penetrationstests und DORA-konformen Lösungen. Ihr vertrauenswürdiger Partner für Cybersicherheit.",
