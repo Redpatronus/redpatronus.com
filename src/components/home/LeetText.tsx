@@ -46,6 +46,9 @@ const LeetText = ({
   pause = 4500,
 }: LeetTextProps) => {
   const [display, setDisplay] = useState(text);
+  const [lockedChars, setLockedChars] = useState<boolean[]>(() =>
+    text.split("").map(() => true)
+  );
 
   useEffect(() => {
     let cancelled = false;
