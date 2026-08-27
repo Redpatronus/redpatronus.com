@@ -553,9 +553,9 @@ const translations: Record<Language, Record<string, any>> = {
       contactUs: "Kontaktujte nás",
     },
     hero: {
-      highlight1: "DORA Kompatibilné",
-      highlight2: "Certifikovaní experti",
-      highlight3: "24/7 Podpora",
+      highlight1: "Bezpečnostné kontroly v súlade s DORA",
+      highlight2: "Certifikovaní špecialisti na cloud security",
+      highlight3: "Reakcia na incidenty 24/7 pre Enterprise",
       title: "Špičková kybernetická bezpečnosť pre podniky.\nDôveryhodné.\nZabezpečené.\nV súlade s predpismi.",
       subtitle:
         "Chránime vaše digitálne aktíva pomocou najmodernejších bezpečnostných služieb, penetračného testovania a riešení v súlade s DORA. Váš dôveryhodný partner v oblasti kybernetickej bezpečnosti.",
