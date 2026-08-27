@@ -1,83 +1,69 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Shield, ArrowRight, CheckCircle, Cloud } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { AWSLogo, AzureLogo, GCPLogo } from "@/components/icons/CloudLogos";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LeetText from "./LeetText";
 
 const HeroSection = () => {
   const { t } = useLanguage();
-  
-  const highlights = [
-    t("hero.highlight1"),
-    t("hero.highlight2"),
-    t("hero.highlight3"),
-  ];
+
+  const highlights = [t("hero.highlight1"), t("hero.highlight2"), t("hero.highlight3")];
 
   const cloudPlatforms = [
-    { name: "AWS", Logo: AWSLogo, bgColor: "bg-[#FF9900]/10 hover:bg-[#FF9900]/20 border-[#FF9900]/30" },
-    { name: "Azure", Logo: AzureLogo, bgColor: "bg-[#0089D6]/10 hover:bg-[#0089D6]/20 border-[#0089D6]/30" },
-    { name: "GCP", Logo: GCPLogo, bgColor: "bg-[#4285F4]/10 hover:bg-[#4285F4]/20 border-[#4285F4]/30" },
+    { name: "AWS", Logo: AWSLogo },
+    { name: "Azure", Logo: AzureLogo },
+    { name: "Google Cloud", Logo: GCPLogo },
   ];
 
   return (
-    <section className="gradient-hero py-12 lg:py-20">
+    <section className="gradient-hero py-10 lg:py-16 border-b border-border">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-4xl mx-auto text-center animate-fade-in flex flex-col items-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
-            <Shield className="h-4 w-4 text-primary" />
-            <span className="font-body text-sm font-medium text-accent-foreground">Enterprise Security Partner</span>
-          </div>
+          <span className="font-body text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-4">
+            Enterprise Security Partner
+          </span>
 
-          <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-6 whitespace-pre-line">
+          <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-[1.1] tracking-tight mb-5 whitespace-pre-line">
             <LeetText text={t("hero.title")} />
           </h1>
 
-          <p className="font-body text-base lg:text-lg text-muted-foreground mb-8 leading-relaxed max-w-2xl">
+          <p className="font-body text-base lg:text-lg text-muted-foreground mb-7 leading-relaxed max-w-2xl">
             {t("hero.subtitle")}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center">
-            <Button size="lg" asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          <div className="flex flex-col sm:flex-row gap-3 mb-8 justify-center">
+            <Button size="lg" asChild>
               <Link to="/contact">
                 {t("hero.cta")}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              asChild
-              className="transition-all duration-300 hover:scale-105 hover:shadow-lg"
-            >
+            <Button variant="outline" size="lg" asChild>
               <Link to="/services">{t("hero.secondaryCta")}</Link>
             </Button>
           </div>
 
-          <div className="flex flex-wrap gap-6 justify-center mb-8">
+          <div className="w-full max-w-3xl grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-3 mb-8">
             {highlights.map((item, index) => (
-              <div key={index} className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-trust-green" />
-                <span className="font-body text-sm font-medium text-foreground">{item}</span>
+              <div key={index} className="flex items-center justify-center gap-2">
+                <Check className="h-3.5 w-3.5 shrink-0 text-primary" strokeWidth={2.5} />
+                <span className="font-body text-sm text-foreground">{item}</span>
               </div>
             ))}
           </div>
 
-          {/* Cloud Security Banner */}
-          <div className="w-full max-w-2xl p-4 bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 rounded-xl border border-primary/20">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-center gap-3">
-              <div className="flex items-center gap-2">
-                <Cloud className="h-5 w-5 text-primary" />
-                <span className="font-body text-sm font-semibold text-foreground">Multi-Cloud Security Experts</span>
-              </div>
-              <div className="flex flex-wrap gap-2 justify-center">
+          {/* Multi-cloud strip */}
+          <div className="w-full max-w-2xl px-4 py-3 bg-card rounded-md border border-border">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-center gap-x-6 gap-y-2">
+              <span className="font-body text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                Multi-cloud
+              </span>
+              <div className="flex flex-wrap gap-4 justify-center">
                 {cloudPlatforms.map((platform) => (
-                  <div
-                    key={platform.name}
-                    className={`flex items-center gap-2 px-3 py-1.5 rounded-full border transition-colors ${platform.bgColor}`}
-                  >
+                  <div key={platform.name} className="flex items-center gap-2">
                     <platform.Logo className="h-4 w-4" />
-                    <span className="text-xs font-semibold text-foreground">{platform.name}</span>
+                    <span className="font-body text-sm text-foreground">{platform.name}</span>
                   </div>
                 ))}
               </div>

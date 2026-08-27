@@ -77,9 +77,9 @@ const translations: Record<Language, Record<string, any>> = {
       contactUs: "Contact Us",
     },
     hero: {
-      highlight1: "DORA Compliant",
-      highlight2: "Certified Experts",
-      highlight3: "24/7 Support",
+      highlight1: "DORA-aligned security controls",
+      highlight2: "Cloud-certified security specialists",
+      highlight3: "24/7 incident response for Enterprise",
       title: "Cybersecurity excellence for the enterprise.\nTrusted.\nSecured.\nCompliant.",
       subtitle:
         "Protecting your digital assets with cutting-edge security services, penetration testing, and DORA-compliant solutions. We are your trusted partner in cybersecurity excellence.",
@@ -553,9 +553,9 @@ const translations: Record<Language, Record<string, any>> = {
       contactUs: "Kontaktujte nás",
     },
     hero: {
-      highlight1: "DORA Kompatibilné",
-      highlight2: "Certifikovaní experti",
-      highlight3: "24/7 Podpora",
+      highlight1: "Bezpečnostné kontroly v súlade s DORA",
+      highlight2: "Certifikovaní špecialisti na cloud security",
+      highlight3: "Reakcia na incidenty 24/7 pre Enterprise",
       title: "Špičková kybernetická bezpečnosť pre podniky.\nDôveryhodné.\nZabezpečené.\nV súlade s predpismi.",
       subtitle:
         "Chránime vaše digitálne aktíva pomocou najmodernejších bezpečnostných služieb, penetračného testovania a riešení v súlade s DORA. Váš dôveryhodný partner v oblasti kybernetickej bezpečnosti.",
@@ -1026,9 +1026,9 @@ const translations: Record<Language, Record<string, any>> = {
       contactUs: "Kontaktieren Sie uns",
     },
     hero: {
-      highlight1: "DORA Konform",
-      highlight2: "Zertifizierte Experten",
-      highlight3: "24/7 Support",
+      highlight1: "DORA-konforme Sicherheitskontrollen",
+      highlight2: "Cloud-zertifizierte Security-Spezialisten",
+      highlight3: "24/7 Incident Response für Enterprise",
       title: "Cybersicherheit auf Enterprise-Niveau.\nVertrauenswürdig.\nSicher.\nKonform.",
       subtitle:
         "Schutz Ihrer digitalen Vermögenswerte mit modernsten Sicherheitsdiensten, Penetrationstests und DORA-konformen Lösungen. Ihr vertrauenswürdiger Partner für Cybersicherheit.",
@@ -1500,9 +1500,9 @@ const translations: Record<Language, Record<string, any>> = {
       contactUs: "Contactez-nous",
     },
     hero: {
-      highlight1: "Conforme DORA",
-      highlight2: "Experts certifiés",
-      highlight3: "Support 24/7",
+      highlight1: "Contrôles de sécurité conformes à DORA",
+      highlight2: "Spécialistes certifiés en sécurité cloud",
+      highlight3: "Réponse aux incidents 24/7 pour l'Enterprise",
       title: "L'excellence en cybersécurité pour l'entreprise.\nFiable.\nSécurisé.\nConforme.",
       subtitle:
         "Protégez vos actifs numériques avec des services de sécurité de pointe, des tests d'intrusion et des solutions conformes à DORA. Votre partenaire de confiance en cybersécurité.",
