@@ -69,6 +69,7 @@ const LeetText = ({
     const perTick = Math.max(1, Math.ceil(revealable.length / ticks));
 
     // Kick off immediately on mount so it runs during page load
+    setLockedChars(chars.map((c) => c === " " || c === "\n"));
     setDisplay(
       chars.map((c) => (c === " " || c === "\n" ? c : pickLeet(c))).join("")
     );
@@ -103,6 +104,7 @@ const LeetText = ({
           group.forEach((idx) => {
             locked[idx] = true;
           });
+          setLockedChars([...locked]);
           setDisplay(
             chars
               .map((c, i) => {
@@ -118,6 +120,7 @@ const LeetText = ({
 
       const finalize = window.setTimeout(() => {
         if (cancelled) return;
+        setLockedChars(chars.map(() => true));
         setDisplay(text);
       }, groups.length * REVEAL_STEP + 80);
       timeouts.push(finalize);
@@ -138,7 +141,23 @@ const LeetText = ({
       style={{ whiteSpace: "pre-line", fontVariantLigatures: "none" }}
       aria-label={text}
     >
-      {display}
+      {display.split("").map((ch, i) => {
+        const isLocked = lockedChars[i] ?? true;
+        if (ch === "\n") return <br key={i} />;
+        return (
+          <span
+            key={i}
+            aria-hidden="true"
+            className={
+              isLocked
+                ? undefined
+                : "font-mono text-primary opacity-90 [text-shadow:0_0_10px_hsl(var(--primary)/0.35)]"
+            }
+          >
+            {ch}
+          </span>
+        );
+      })}
     </span>
   );
 };
