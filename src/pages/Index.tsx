@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Layout from "@/components/layout/Layout";
 import HeroSection from "@/components/home/HeroSection";
 import ServicesOverview from "@/components/home/ServicesOverview";
+import OfferBanner from "@/components/home/OfferBanner";
 import AISecuritySection from "@/components/home/AISecuritySection";
 import TrustIndicators from "@/components/home/TrustIndicators";
 import CTASection from "@/components/home/CTASection";
@@ -50,6 +51,7 @@ const Index = () => {
       </Helmet>
       <Layout>
         <HeroSection />
+        <OfferBanner />
         <ServicesOverview />
         <AISecuritySection />
         {FEATURES.tools && <ToolsSection />}
