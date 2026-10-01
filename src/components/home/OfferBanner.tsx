@@ -22,7 +22,7 @@ const copy: Record<Language, Copy> = {
     detailsTitle: "What's included",
     details: [
       "Web application or external infrastructure scope",
-      "Manual testing aligned with OWASP Top 10 and PTES",
+      "Security testing aligned with OWASP Top 10 and PTES",
       "Executive summary and technical report with PoC",
       "Risk-prioritized remediation guidance",
     ],
