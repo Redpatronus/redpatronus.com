@@ -23,10 +23,8 @@ const copy: Record<Language, Copy> = {
     details: [
       "Web application or external infrastructure scope",
       "Manual testing aligned with OWASP Top 10 and PTES",
-      "Up to 5 testing days by certified specialists",
       "Executive summary and technical report with PoC",
       "Risk-prioritized remediation guidance",
-      "Free retest of fixed findings and attestation letter",
     ],
     cta: "Book your pentest",
     orEmail: "or write to us directly",
@@ -42,10 +40,8 @@ const copy: Record<Language, Copy> = {
     details: [
       "Rozsah: webová aplikácia alebo externá infraštruktúra",
       "Manuálne testovanie podľa OWASP Top 10 a PTES",
-      "Až 5 testovacích dní certifikovaných špecialistov",
       "Manažérske zhrnutie a technická správa s PoC",
       "Odporúčania na nápravu zoradené podľa rizika",
-      "Bezplatný retest opráv a potvrdenie pre audit",
     ],
     cta: "Objednať pentest",
     orEmail: "alebo nám napíšte priamo",
@@ -61,10 +57,8 @@ const copy: Record<Language, Copy> = {
     details: [
       "Umfang: Webanwendung oder externe Infrastruktur",
       "Manuelle Tests nach OWASP Top 10 und PTES",
-      "Bis zu 5 Testtage durch zertifizierte Spezialisten",
       "Management-Summary und technischer Bericht mit PoC",
       "Risikopriorisierte Empfehlungen zur Behebung",
-      "Kostenloser Retest und Bestätigungsschreiben",
     ],
     cta: "Pentest anfragen",
     orEmail: "oder schreiben Sie uns direkt",
@@ -80,10 +74,8 @@ const copy: Record<Language, Copy> = {
     details: [
       "Périmètre : application web ou infrastructure externe",
       "Tests manuels selon OWASP Top 10 et PTES",
-      "Jusqu'à 5 jours de test par des spécialistes certifiés",
       "Synthèse dirigeants et rapport technique avec PoC",
       "Recommandations de remédiation priorisées",
-      "Retest gratuit et lettre d'attestation",
     ],
     cta: "Réserver un pentest",
     orEmail: "ou écrivez-nous directement",
