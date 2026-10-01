@@ -15,7 +15,7 @@ const copy: Record<Language, Copy> = {
   en: {
     eyebrow: "Limited offer",
     title: "Professional penetration test",
-    price: "€2,000",
+    price: "€3,000",
     priceNote: "fixed price, excl. VAT",
     bonusLabel: "Zero-findings guarantee",
     bonus: "If we find no vulnerability, next year's pentest is on us — free of charge.",
@@ -32,7 +32,7 @@ const copy: Record<Language, Copy> = {
   sk: {
     eyebrow: "Limitovaná ponuka",
     title: "Profesionálny penetračný test",
-    price: "2 000 €",
+    price: "3 000 €",
     priceNote: "pevná cena, bez DPH",
     bonusLabel: "Garancia nulových nálezov",
     bonus: "Ak nenájdeme žiadnu zraniteľnosť, pentest v budúcom roku dostanete zdarma.",
@@ -49,7 +49,7 @@ const copy: Record<Language, Copy> = {
   de: {
     eyebrow: "Limitiertes Angebot",
     title: "Professioneller Penetrationstest",
-    price: "2.000 €",
+    price: "3.000 €",
     priceNote: "Festpreis, zzgl. MwSt.",
     bonusLabel: "Null-Befund-Garantie",
     bonus: "Finden wir keine Schwachstelle, erhalten Sie den Pentest im nächsten Jahr kostenlos.",
@@ -66,7 +66,7 @@ const copy: Record<Language, Copy> = {
   fr: {
     eyebrow: "Offre limitée",
     title: "Test d'intrusion professionnel",
-    price: "2 000 €",
+    price: "3 000 €",
     priceNote: "prix fixe, HT",
     bonusLabel: "Garantie zéro vulnérabilité",
     bonus: "Si nous ne trouvons aucune vulnérabilité, le pentest de l'année prochaine est offert.",
@@ -136,7 +136,7 @@ const OfferBanner = () => {
                   </Link>
                 </Button>
                 <a
-                  href={`mailto:${EMAIL}?subject=Pentest%202000%20EUR`}
+                  href={`mailto:${EMAIL}?subject=Pentest%203000%20EUR`}
                   className="inline-flex items-center gap-2 font-body text-sm text-background/80 hover:text-background transition-colors"
                 >
                   <Mail className="h-4 w-4" />
