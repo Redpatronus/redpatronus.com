@@ -36,6 +36,11 @@ const detectBrowserLanguage = (): Language => {
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
+    const fromUrl = new URLSearchParams(window.location.search).get("lang");
+    if (fromUrl && SUPPORTED_LANGUAGES.includes(fromUrl as Language)) {
+      localStorage.setItem("language", fromUrl);
+      return fromUrl as Language;
+    }
     const saved = localStorage.getItem("language");
     if (saved && SUPPORTED_LANGUAGES.includes(saved as Language)) return saved as Language;
     return detectBrowserLanguage();

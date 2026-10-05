@@ -15,7 +15,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://redpatron.us/sitemap.xml
+Sitemap: https://redpatronus.com/sitemap.xml
 
 # Disallow API endpoints
 Disallow: /api/

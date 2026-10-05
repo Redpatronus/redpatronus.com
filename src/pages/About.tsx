@@ -21,7 +21,7 @@ const About = () => {
           name="description"
           content="Learn about Red Patronus, a leading DORA-compliant cybersecurity firm with 15+ years protecting enterprise and financial organizations from cyber threats."
         />
-        <link rel="canonical" href="https://redpatron.us/about" />
+        <link rel="canonical" href="https://redpatronus.com/about" />
       </Helmet>
       <Layout>
         {/* Hero */}

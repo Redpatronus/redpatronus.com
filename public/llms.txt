@@ -1,0 +1,19 @@
+# Red Patronus
+
+> DORA-compliant enterprise cybersecurity from Bratislava, Slovakia: penetration testing, red teaming, cloud security (AWS/Azure/GCP), AI-powered security and compliance consulting.
+
+Red Patronus helps financial and enterprise organisations meet DORA and NIS2 requirements. The site is available in English, Slovak, German and French (add ?lang=sk|de|fr).
+
+## Pages
+
+- [Home](/): Overview of services and current pentest offer.
+- [Services](/services): All security service areas.
+- [Penetration Testing](/services/penetration-testing): Web, infrastructure and AI pentests.
+- [Red Team](/services/red-team): Adversary simulation and TLPT.
+- [Cloud Security](/services/cloud-security): AWS, Azure and Google Cloud security.
+- [Compliance](/services/compliance): DORA, NIS2, ISO 27001 and business continuity.
+- [Security Consulting](/services/security-consulting): Strategy and advisory.
+- [About](/about): Team and values.
+- [Case Studies](/case-studies): Selected client work.
+- [Hiring](/hiring): Open positions.
+- [Contact](/contact): info@redpatronus.com, Mlynské nivy 48, 821 09 Bratislava.
