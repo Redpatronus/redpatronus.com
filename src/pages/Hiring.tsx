@@ -41,7 +41,7 @@ const Hiring = () => {
               : "Open positions at Red Patronus. Join our cybersecurity team in Bratislava."
           }
         />
-        <link rel="canonical" href="https://redpatron.us/hiring" />
+        <link rel="canonical" href="https://redpatronus.com/hiring" />
       </Helmet>
       <Layout>
         {/* Hero */}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://redpatronus.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/" />
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/services?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/services?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/services?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/services?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/services" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/services/penetration-testing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/services/penetration-testing?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/services/penetration-testing?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/services/penetration-testing?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/services/penetration-testing?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/services/penetration-testing" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/services/red-team</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/services/red-team?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/services/red-team?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/services/red-team?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/services/red-team?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/services/red-team" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/services/security-consulting</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/services/security-consulting?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/services/security-consulting?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/services/security-consulting?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/services/security-consulting?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/services/security-consulting" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/services/cloud-security</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/services/cloud-security?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/services/cloud-security?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/services/cloud-security?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/services/cloud-security?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/services/cloud-security" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/services/offensive</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/services/offensive?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/services/offensive?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/services/offensive?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/services/offensive?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/services/offensive" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/services/defensive</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/services/defensive?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/services/defensive?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/services/defensive?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/services/defensive?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/services/defensive" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/services/etsm</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/services/etsm?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/services/etsm?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/services/etsm?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/services/etsm?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/services/etsm" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/services/training</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/services/training?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/services/training?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/services/training?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/services/training?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/services/training" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/services/compliance</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/services/compliance?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/services/compliance?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/services/compliance?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/services/compliance?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/services/compliance" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/services/iam</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/services/iam?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/services/iam?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/services/iam?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/services/iam?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/services/iam" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/services/phishing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/services/phishing?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/services/phishing?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/services/phishing?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/services/phishing?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/services/phishing" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/services/siem</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/services/siem?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/services/siem?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/services/siem?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/services/siem?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/services/siem" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/about?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/about?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/about?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/about?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/about" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/case-studies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/case-studies?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/case-studies?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/case-studies?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/case-studies?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/case-studies" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/contact?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/contact?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/contact?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/contact?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/contact" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redpatronus.com/hiring</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://redpatronus.com/hiring?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://redpatronus.com/hiring?lang=sk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://redpatronus.com/hiring?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://redpatronus.com/hiring?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://redpatronus.com/hiring" />
+    <priority>0.8</priority>
+  </url>
+</urlset>

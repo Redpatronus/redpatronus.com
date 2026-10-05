@@ -16,7 +16,7 @@ const CaseStudies = () => {
       <Helmet>
         <title>Case Studies | Red Patronus - Enterprise Security Success Stories</title>
         <meta name="description" content="Explore how Red Patronus has helped 300+ enterprise organizations achieve DORA compliance and strengthen security." />
-        <link rel="canonical" href="https://redpatron.us/case-studies" />
+        <link rel="canonical" href="https://redpatronus.com/case-studies" />
       </Helmet>
       <Layout>
         <section className="gradient-hero py-16 lg:py-24">

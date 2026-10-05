@@ -110,7 +110,7 @@ const Contact = () => {
       <Helmet>
         <title>Contact Us | Red Patronus - DORA Cybersecurity Consultation</title>
         <meta name="description" content="Contact Red Patronus for DORA-compliant cybersecurity solutions. Schedule a consultation with our enterprise security experts in Bratislava, Slovakia." />
-        <link rel="canonical" href="https://redpatron.us/contact" />
+        <link rel="canonical" href="https://redpatronus.com/contact" />
       </Helmet>
       <Layout>
         <section className="gradient-hero py-16 lg:py-24">

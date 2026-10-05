@@ -32,7 +32,7 @@ const Services = () => {
       <Helmet>
         <title>DORA-Compliant Security Services | Red Patronus</title>
         <meta name="description" content="Red Patronus DORA-compliant cybersecurity services: penetration testing, red team, cloud security, compliance audits, IAM, and security training for enterprises." />
-        <link rel="canonical" href="https://redpatron.us/services" />
+        <link rel="canonical" href="https://redpatronus.com/services" />
       </Helmet>
       <Layout>
         <section className="gradient-hero py-16 lg:py-24">
