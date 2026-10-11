@@ -1,4 +1,7 @@
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/seo/PageSeo";
+import AnswerSummary from "@/components/seo/AnswerSummary";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import PageFacts from "@/components/seo/PageFacts";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -15,18 +18,12 @@ const About = () => {
 
   return (
     <>
-      <Helmet>
-        <title>About Us | Red Patronus - DORA-Compliant Cybersecurity Experts</title>
-        <meta
-          name="description"
-          content="Learn about Red Patronus, a leading DORA-compliant cybersecurity firm with 15+ years protecting enterprise and financial organizations from cyber threats."
-        />
-        <link rel="canonical" href="https://redpatronus.com/about" />
-      </Helmet>
-      <Layout>
+      <PageSeo path="/about" />
+      <Layout seoPath="/about">
         {/* Hero */}
         <section className="gradient-hero py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8 text-center">
+            <Breadcrumbs path="/about" align="center" />
             <span className="font-body text-sm font-semibold text-primary uppercase tracking-wider">
               {t("about.title")}
             </span>
@@ -36,6 +33,7 @@ const About = () => {
             <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
               {t("about.heroSubtitle")}
             </p>
+            <AnswerSummary path="/about" align="center" />
           </div>
         </section>
 
@@ -190,6 +188,8 @@ const About = () => {
                   <img
                     src="/rp-logo.svg"
                     alt="Red Patronus logo"
+                    loading="lazy"
+                    decoding="async"
                     className="max-w-[60%] max-h-[60%] object-contain"
                   />
                 </div>
@@ -201,6 +201,7 @@ const About = () => {
 
 
         {/* CTA */}
+        <PageFacts path="/about" />
         <section className="py-20 bg-primary relative overflow-hidden">
           <div className="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
           <div className="container mx-auto px-4 lg:px-8 text-center relative z-10">

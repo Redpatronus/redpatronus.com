@@ -1,5 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import PageSeo from "@/components/seo/PageSeo";
+import AnswerSummary from "@/components/seo/AnswerSummary";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import PageFacts from "@/components/seo/PageFacts";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, Briefcase, Wallet, GraduationCap } from "lucide-react";
@@ -31,24 +34,14 @@ const Hiring = () => {
 
   return (
     <>
-      <Helmet>
-        <title>{pageTitle} | Red Patronus</title>
-        <meta
-          name="description"
-          content={
-            isSK
-              ? "Otvorené pracovné pozície v Red Patronus. Pridaj sa k nášmu kybernetickému tímu v Bratislave."
-              : "Open positions at Red Patronus. Join our cybersecurity team in Bratislava."
-          }
-        />
-        <link rel="canonical" href="https://redpatronus.com/hiring" />
-      </Helmet>
-      <Layout>
+      <PageSeo path="/hiring" />
+      <Layout seoPath="/hiring">
         {/* Hero */}
         <section className="relative py-24 lg:py-32 border-b border-border overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,hsl(var(--primary)/0.08),transparent_55%)]" />
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
+              <Breadcrumbs path="/hiring" align="center" />
               <span className="font-body text-xs font-bold tracking-[0.2em] text-primary uppercase mb-6 block">
                 {isSK ? "Kariéra" : "Careers"}
               </span>
@@ -58,6 +51,7 @@ const Hiring = () => {
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 {pageLead}
               </p>
+              <AnswerSummary path="/hiring" align="center" />
             </div>
           </div>
         </section>
@@ -110,6 +104,7 @@ const Hiring = () => {
             </article>
           </div>
         </section>
+        <PageFacts path="/hiring" />
       </Layout>
     </>
   );

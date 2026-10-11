@@ -128,7 +128,9 @@ const TrustIndicators = () => {
                 >
                   <img
                     src={partner.logo}
-                    alt={partner.name}
+                    alt={`${partner.name} logo`}
+                    loading="lazy"
+                    decoding="async"
                     className={`${partner.large ? "h-20" : "h-12"} max-h-full w-auto object-contain`}
                   />
                 </div>

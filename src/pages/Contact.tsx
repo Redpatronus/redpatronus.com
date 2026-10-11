@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/seo/PageSeo";
+import AnswerSummary from "@/components/seo/AnswerSummary";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import PageFacts from "@/components/seo/PageFacts";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -107,14 +110,11 @@ const Contact = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Contact Us | Red Patronus - DORA Cybersecurity Consultation</title>
-        <meta name="description" content="Contact Red Patronus for DORA-compliant cybersecurity solutions. Schedule a consultation with our enterprise security experts in Bratislava, Slovakia." />
-        <link rel="canonical" href="https://redpatronus.com/contact" />
-      </Helmet>
-      <Layout>
+      <PageSeo path="/contact" />
+      <Layout seoPath="/contact">
         <section className="gradient-hero py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8 text-center">
+            <Breadcrumbs path="/contact" align="center" />
             <span className="font-body text-sm font-semibold text-primary uppercase tracking-wider">
               {t("contact.heroLabel")}
             </span>
@@ -124,6 +124,7 @@ const Contact = () => {
             <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
               {t("contact.heroSubtitle")}
             </p>
+            <AnswerSummary path="/contact" align="center" />
           </div>
         </section>
 
@@ -283,6 +284,7 @@ const Contact = () => {
             </div>
           </div>
         </section>
+        <PageFacts path="/contact" />
       </Layout>
     </>
   );

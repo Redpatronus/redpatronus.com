@@ -41,10 +41,25 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="font-display text-lg font-semibold mb-4">{t("footer.services")}</h4>
+          <nav aria-label={t("footer.services")}>
+            <h2 className="font-display text-lg font-semibold mb-4">{t("footer.services")}</h2>
             <ul className="space-y-3">
+              <li>
+                <Link
+                  to="/services/penetration-testing"
+                  className="font-body text-sm text-background/70 hover:text-background transition-colors"
+                >
+                  {t("footer.pentest")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/red-team"
+                  className="font-body text-sm text-background/70 hover:text-background transition-colors"
+                >
+                  {t("footer.redTeam")}
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/services/offensive"
@@ -79,6 +94,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  to="/services/security-consulting"
+                  className="font-body text-sm text-background/70 hover:text-background transition-colors"
+                >
+                  {t("services.consulting.title")}
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/services/training"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
@@ -86,11 +109,10 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </nav>
 
-          {/* Company */}
-          <div>
-            <h4 className="font-display text-lg font-semibold mb-4">{t("footer.company")}</h4>
+          <nav aria-label={t("footer.company")}>
+            <h2 className="font-display text-lg font-semibold mb-4">{t("footer.company")}</h2>
             <ul className="space-y-3">
               <li>
                 <Link
@@ -110,6 +132,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  to="/hiring"
+                  className="font-body text-sm text-background/70 hover:text-background transition-colors"
+                >
+                  {t("nav.hiring")}
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/contact"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
@@ -117,11 +147,10 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </nav>
 
-          {/* Contact */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-4">{t("footer.contactInfo")}</h4>
+            <h2 className="font-display text-lg font-semibold mb-4">{t("footer.contactInfo")}</h2>
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-background/60" />

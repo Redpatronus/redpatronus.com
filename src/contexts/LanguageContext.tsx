@@ -199,6 +199,8 @@ const translations: Record<Language, Record<string, any>> = {
       description:
         "Enterprise cybersecurity solutions protecting organizations across Europe. DORA-compliant security services you can trust.",
       services: "Services",
+      pentest: "Penetration Testing",
+      redTeam: "Red Team",
       company: "Company",
       contactInfo: "Contact Info",
       aboutUs: "About Us",
@@ -674,6 +676,8 @@ const translations: Record<Language, Record<string, any>> = {
       description:
         "Podnikové riešenia kybernetickej bezpečnosti chrániace organizácie po celej Európe. Bezpečnostné služby v súlade s DORA, ktorým môžete dôverovať.",
       services: "Služby",
+      pentest: "Penetračné testovanie",
+      redTeam: "Red team",
       company: "Spoločnosť",
       contactInfo: "Kontaktné údaje",
       aboutUs: "O nás",
@@ -1147,6 +1151,8 @@ const translations: Record<Language, Record<string, any>> = {
       description:
         "Enterprise Cybersicherheitslösungen zum Schutz von Organisationen in ganz Europa. DORA-konforme Sicherheitsdienste, denen Sie vertrauen können.",
       services: "Dienstleistungen",
+      pentest: "Penetrationstests",
+      redTeam: "Red Team",
       company: "Unternehmen",
       contactInfo: "Kontaktinfo",
       aboutUs: "Über uns",
@@ -1621,6 +1627,8 @@ const translations: Record<Language, Record<string, any>> = {
       description:
         "Solutions de cybersécurité pour entreprises protégeant les organisations à travers l'Europe. Services de sécurité conformes à DORA en qui vous pouvez avoir confiance.",
       services: "Services",
+      pentest: "Tests d'intrusion",
+      redTeam: "Red team",
       company: "Entreprise",
       contactInfo: "Coordonnées",
       aboutUs: "À propos de nous",

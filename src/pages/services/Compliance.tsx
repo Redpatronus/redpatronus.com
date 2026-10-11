@@ -1,4 +1,7 @@
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/seo/PageSeo";
+import AnswerSummary from "@/components/seo/AnswerSummary";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import PageFacts from "@/components/seo/PageFacts";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -38,18 +41,13 @@ const features = [
 const Compliance = () => {
   return (
     <>
-      <Helmet>
-        <title>DORA Compliance and Regulation Audits | Red Patronus</title>
-        <meta
-          name="description"
-          content="DORA-compliant audit services including Digital Operational Resilience Act assessments, GAP analysis, and compliance alignment with CIS, NIST, and EU regulations."
-        />
-      </Helmet>
-      <Layout>
+      <PageSeo path="/services/compliance" />
+      <Layout seoPath="/services/compliance">
         {/* Hero */}
         <section className="gradient-hero py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-4xl">
+              <Breadcrumbs path="/services/compliance" />
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <ClipboardCheck className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">
@@ -62,6 +60,7 @@ const Compliance = () => {
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
                 Our services are delivered by the book of DORA (Digital Operational Resilience Act) compliance. We help your organization not only meet but exceed stringent standards with our innovative blend of traditional assessments, GAP analysis, and ICT risk management methodologies.
               </p>
+              <AnswerSummary path="/services/compliance" />
             </div>
           </div>
         </section>
@@ -91,6 +90,7 @@ const Compliance = () => {
         </section>
 
         {/* CTA */}
+        <PageFacts path="/services/compliance" />
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">

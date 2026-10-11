@@ -1,4 +1,7 @@
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/seo/PageSeo";
+import AnswerSummary from "@/components/seo/AnswerSummary";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import PageFacts from "@/components/seo/PageFacts";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -41,18 +44,13 @@ const frameworks = [
 const SecurityConsulting = () => {
   return (
     <>
-      <Helmet>
-        <title>Security Consulting Services | Red Patronus</title>
-        <meta
-          name="description"
-          content="Enterprise security consulting including compliance assessments, security architecture reviews, policy development, and risk management services."
-        />
-      </Helmet>
-      <Layout>
+      <PageSeo path="/services/security-consulting" />
+      <Layout seoPath="/services/security-consulting">
         {/* Hero */}
         <section className="gradient-hero py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-4xl">
+              <Breadcrumbs path="/services/security-consulting" />
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <FileSearch className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">
@@ -65,6 +63,7 @@ const SecurityConsulting = () => {
               <p className="font-body text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
                 Strategic security guidance to help your organization build and maintain a robust security program that meets regulatory requirements and industry best practices.
               </p>
+              <AnswerSummary path="/services/security-consulting" />
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>
                   <Link to="/contact">
@@ -155,6 +154,7 @@ const SecurityConsulting = () => {
         </section>
 
         {/* CTA */}
+        <PageFacts path="/services/security-consulting" />
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">

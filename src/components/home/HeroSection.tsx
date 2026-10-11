@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
 import { AWSLogo, AzureLogo, GCPLogo } from "@/components/icons/CloudLogos";
 import { useLanguage } from "@/contexts/LanguageContext";
+import AnswerSummary from "@/components/seo/AnswerSummary";
 import LeetText from "./LeetText";
 
 const HeroSection = () => {
@@ -28,9 +29,12 @@ const HeroSection = () => {
             <LeetText text={t("hero.title")} />
           </h1>
 
-          <p className="font-body text-base lg:text-lg text-muted-foreground mb-7 leading-relaxed max-w-2xl">
+          <p className="font-body text-base lg:text-lg text-muted-foreground mb-4 leading-relaxed max-w-2xl">
             {t("hero.subtitle")}
           </p>
+          <div className="mb-7">
+            <AnswerSummary path="/" align="center" />
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-3 mb-8 justify-center">
             <Button size="lg" asChild>

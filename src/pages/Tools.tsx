@@ -1,5 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import PageSeo from "@/components/seo/PageSeo";
+import AnswerSummary from "@/components/seo/AnswerSummary";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import PageFacts from "@/components/seo/PageFacts";
 import { ArrowRight, Wrench, Users, ShieldCheck } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -23,24 +26,11 @@ const reasons = [
 const Tools = () => {
   return (
     <>
-      <Helmet>
-        <title>Security Tools by Redpatronus | Free Community Utilities</title>
-        <meta
-          name="description"
-          content="Free, practical security tools built by the Redpatronus team and shared with the community: IP reputation lookup, DORA readiness checks, and threat intelligence."
-        />
-        <link rel="canonical" href="https://redpatronus.com/tools" />
-        <meta property="og:title" content="Security Tools by Redpatronus" />
-        <meta
-          property="og:description"
-          content="Free, practical security tools built by the Redpatronus team and shared with the community."
-        />
-        <meta property="og:url" content="https://redpatronus.com/tools" />
-        <meta property="og:type" content="website" />
-      </Helmet>
-      <Layout>
+      <PageSeo path="/tools" />
+      <Layout seoPath="/tools">
         <section className="gradient-hero py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8 text-center max-w-3xl">
+            <Breadcrumbs path="/tools" align="center" />
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
               <Wrench className="h-4 w-4 text-primary" />
               <span className="font-body text-sm font-medium text-accent-foreground">
@@ -54,6 +44,7 @@ const Tools = () => {
               Small, focused utilities from our engineers — free to use, easy to run, and made to solve
               the problems we keep seeing in real environments.
             </p>
+            <AnswerSummary path="/tools" align="center" />
           </div>
         </section>
 
@@ -123,6 +114,7 @@ const Tools = () => {
             </div>
           </div>
         </section>
+        <PageFacts path="/tools" />
       </Layout>
     </>
   );
