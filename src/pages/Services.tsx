@@ -1,4 +1,7 @@
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/seo/PageSeo";
+import AnswerSummary from "@/components/seo/AnswerSummary";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import PageFacts from "@/components/seo/PageFacts";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -29,14 +32,11 @@ const Services = () => {
 
   return (
     <>
-      <Helmet>
-        <title>DORA-Compliant Security Services | Red Patronus</title>
-        <meta name="description" content="Red Patronus DORA-compliant cybersecurity services: penetration testing, red team, cloud security, compliance audits, IAM, and security training for enterprises." />
-        <link rel="canonical" href="https://redpatronus.com/services" />
-      </Helmet>
-      <Layout>
+      <PageSeo path="/services" />
+      <Layout seoPath="/services">
         <section className="gradient-hero py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8 text-center">
+            <Breadcrumbs path="/services" align="center" />
             <span className="font-body text-sm font-semibold text-primary uppercase tracking-wider">
               {t("servicesPage.heroLabel")}
             </span>
@@ -46,6 +46,7 @@ const Services = () => {
             <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
               {t("servicesPage.heroSubtitle")}
             </p>
+            <AnswerSummary path="/services" align="center" />
           </div>
         </section>
 
@@ -115,6 +116,7 @@ const Services = () => {
           </div>
         </section>
 
+        <PageFacts path="/services" />
         <section className="py-16 lg:py-24 bg-surface">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">

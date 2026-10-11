@@ -1,6 +1,9 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import PageSeo from "@/components/seo/PageSeo";
+import AnswerSummary from "@/components/seo/AnswerSummary";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import PageFacts from "@/components/seo/PageFacts";
 import { Radar, Search, Loader2, ShieldCheck, ShieldAlert, ShieldX, ArrowLeft } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -65,24 +68,11 @@ const IpReputation = () => {
 
   return (
     <>
-      <Helmet>
-        <title>IP Reputation Checker | Free Tool by Redpatronus</title>
-        <meta
-          name="description"
-          content="Free IP reputation lookup combining Redpatronus internet-scanner intelligence with public blocklists. Check whether an IPv4 address is scanning, spamming or known benign."
-        />
-        <link rel="canonical" href="https://redpatronus.com/tools/ip-reputation" />
-        <meta property="og:title" content="IP Reputation Checker by Redpatronus" />
-        <meta
-          property="og:description"
-          content="Check any IPv4 address against Redpatronus and public blocklists in one click."
-        />
-        <meta property="og:url" content="https://redpatronus.com/tools/ip-reputation" />
-        <meta property="og:type" content="website" />
-      </Helmet>
-      <Layout>
+      <PageSeo path="/tools/ip-reputation" />
+      <Layout seoPath="/tools/ip-reputation">
         <section className="gradient-hero py-14 lg:py-20">
           <div className="container mx-auto px-4 lg:px-8 max-w-3xl text-center">
+            <Breadcrumbs path="/tools/ip-reputation" align="center" />
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
               <Radar className="h-4 w-4 text-primary" />
               <span className="font-body text-sm font-medium text-accent-foreground">Free tool</span>
@@ -94,6 +84,7 @@ const IpReputation = () => {
               Look up any IPv4 address against Redpatronus internet-scanner intelligence and public
               blocklists fed by our honeypot networks
             </p>
+            <AnswerSummary path="/tools/ip-reputation" align="center" />
           </div>
         </section>
 
@@ -189,6 +180,7 @@ const IpReputation = () => {
             </div>
           </div>
         </section>
+        <PageFacts path="/tools/ip-reputation" />
       </Layout>
     </>
   );

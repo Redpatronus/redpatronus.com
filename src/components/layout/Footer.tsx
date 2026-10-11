@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { SITE } from "@/seo/site.js";
 import logoRedpatronus from "@/assets/rp-logo-footer.svg";
 
 
@@ -30,6 +31,17 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
+                href="https://x.com/Redpatronus"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-background/60 hover:text-background transition-colors"
+                aria-label="X"
+              >
+                <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+              <a
                 href="https://github.com/Redpatronus"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -41,10 +53,25 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="font-display text-lg font-semibold mb-4">{t("footer.services")}</h4>
+          <nav aria-label={t("footer.services")}>
+            <h2 className="font-display text-lg font-semibold mb-4">{t("footer.services")}</h2>
             <ul className="space-y-3">
+              <li>
+                <Link
+                  to="/services/penetration-testing"
+                  className="font-body text-sm text-background/70 hover:text-background transition-colors"
+                >
+                  {t("footer.pentest")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/red-team"
+                  className="font-body text-sm text-background/70 hover:text-background transition-colors"
+                >
+                  {t("footer.redTeam")}
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/services/offensive"
@@ -79,6 +106,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  to="/services/security-consulting"
+                  className="font-body text-sm text-background/70 hover:text-background transition-colors"
+                >
+                  {t("services.consulting.title")}
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/services/training"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
@@ -86,11 +121,10 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </nav>
 
-          {/* Company */}
-          <div>
-            <h4 className="font-display text-lg font-semibold mb-4">{t("footer.company")}</h4>
+          <nav aria-label={t("footer.company")}>
+            <h2 className="font-display text-lg font-semibold mb-4">{t("footer.company")}</h2>
             <ul className="space-y-3">
               <li>
                 <Link
@@ -110,6 +144,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  to="/hiring"
+                  className="font-body text-sm text-background/70 hover:text-background transition-colors"
+                >
+                  {t("nav.hiring")}
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/contact"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
@@ -117,39 +159,43 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </nav>
 
-          {/* Contact */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-4">{t("footer.contactInfo")}</h4>
+            <h2 className="font-display text-lg font-semibold mb-4">{t("footer.contactInfo")}</h2>
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-background/60" />
                 <a
-                  href="mailto:info@redpatronus.com"
+                  href={`mailto:${SITE.email}`}
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  info@redpatronus.com
+                  {SITE.email}
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-background/60" />
                 <a
-                  href="tel:+421948446778"
+                  href={`tel:${SITE.telephone}`}
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  +421 948 446 778
+                  {SITE.telephoneDisplay}
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-background/60 mt-0.5" />
                 <span className="font-body text-sm text-background/70">
-                  Mlynské nivy 48<br />
-                  Bratislava 821 09<br />
-                  Slovakia
+                  {SITE.address.street}<br />
+                  {SITE.address.postal} {SITE.address.locality}<br />
+                  {SITE.address.countryName}
                 </span>
               </li>
             </ul>
+            <p className="font-body text-xs text-background/50 mt-4 leading-relaxed">
+              {SITE.legalName}<br />
+              IČO {SITE.ico}<br />
+              DIČ {SITE.dic} · IČ DPH {SITE.vatId}
+            </p>
           </div>
         </div>
 

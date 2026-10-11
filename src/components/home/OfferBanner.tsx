@@ -6,17 +6,18 @@ import { useLanguage, type Language } from "@/contexts/LanguageContext";
 const EMAIL = "info@redpatronus.com";
 
 type Copy = {
-  eyebrow: string; title: string; price: string; priceNote: string;
+  eyebrow: string; title: string; price: string; priceNote: string; offerNote: string;
   bonusLabel: string; bonus: string; detailsTitle: string; details: string[];
   cta: string; orEmail: string;
 };
 
 const copy: Record<Language, Copy> = {
   en: {
-    eyebrow: "Limited offer",
+    eyebrow: "Limited-time special offer",
     title: "Professional penetration test",
     price: "€3,000",
-    priceNote: "fixed price, excl. VAT",
+    priceNote: "excl. VAT, not standard pricing",
+    offerNote: "No end date is published.",
     bonusLabel: "Zero-findings guarantee",
     bonus: "If we find no vulnerability, next year's pentest is on us — free of charge.",
     detailsTitle: "What's included",
@@ -30,10 +31,11 @@ const copy: Record<Language, Copy> = {
     orEmail: "or write to us directly",
   },
   sk: {
-    eyebrow: "Limitovaná ponuka",
+    eyebrow: "Časovo obmedzená špeciálna ponuka",
     title: "Profesionálny penetračný test",
     price: "3 000 €",
-    priceNote: "pevná cena, bez DPH",
+    priceNote: "bez DPH, nie bežná cena",
+    offerNote: "Dátum konca nie je uverejnený.",
     bonusLabel: "Garancia nulových nálezov",
     bonus: "Ak nenájdeme žiadnu zraniteľnosť, pentest v budúcom roku dostanete zdarma.",
     detailsTitle: "Čo test obsahuje",
@@ -47,10 +49,11 @@ const copy: Record<Language, Copy> = {
     orEmail: "alebo nám napíšte priamo",
   },
   de: {
-    eyebrow: "Limitiertes Angebot",
+    eyebrow: "Befristetes Sonderangebot",
     title: "Professioneller Penetrationstest",
     price: "3.000 €",
-    priceNote: "Festpreis, zzgl. MwSt.",
+    priceNote: "zzgl. MwSt., kein Standardpreis",
+    offerNote: "Kein Enddatum veröffentlicht.",
     bonusLabel: "Null-Befund-Garantie",
     bonus: "Finden wir keine Schwachstelle, erhalten Sie den Pentest im nächsten Jahr kostenlos.",
     detailsTitle: "Leistungsumfang",
@@ -64,10 +67,11 @@ const copy: Record<Language, Copy> = {
     orEmail: "oder schreiben Sie uns direkt",
   },
   fr: {
-    eyebrow: "Offre limitée",
+    eyebrow: "Offre spéciale à durée limitée",
     title: "Test d'intrusion professionnel",
     price: "3 000 €",
-    priceNote: "prix fixe, HT",
+    priceNote: "HT, pas le tarif habituel",
+    offerNote: "Aucune date de fin publiée.",
     bonusLabel: "Garantie zéro vulnérabilité",
     bonus: "Si nous ne trouvons aucune vulnérabilité, le pentest de l'année prochaine est offert.",
     detailsTitle: "Ce qui est inclus",
@@ -117,6 +121,7 @@ const OfferBanner = () => {
                 </span>
                 <span className="mb-3 font-body text-sm text-background/70">{c.priceNote}</span>
               </div>
+              <p className="mt-2 font-body text-sm text-background/70">{c.offerNote}</p>
 
               <div className="mt-6 flex gap-3 rounded-md border border-background/20 bg-background/10 p-4 backdrop-blur-sm">
                 <Gift className="h-6 w-6 shrink-0 text-background" />

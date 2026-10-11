@@ -1,4 +1,7 @@
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/seo/PageSeo";
+import AnswerSummary from "@/components/seo/AnswerSummary";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import PageFacts from "@/components/seo/PageFacts";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -13,14 +16,11 @@ const CaseStudies = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Case Studies | Red Patronus - Enterprise Security Success Stories</title>
-        <meta name="description" content="Explore how Red Patronus has helped 300+ enterprise organizations achieve DORA compliance and strengthen security." />
-        <link rel="canonical" href="https://redpatronus.com/case-studies" />
-      </Helmet>
-      <Layout>
+      <PageSeo path="/case-studies" />
+      <Layout seoPath="/case-studies">
         <section className="gradient-hero py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8 text-center">
+            <Breadcrumbs path="/case-studies" align="center" />
             <span className="font-body text-sm font-semibold text-primary uppercase tracking-wider">
               {t("caseStudies.heroLabel")}
             </span>
@@ -30,6 +30,7 @@ const CaseStudies = () => {
             <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
               {t("caseStudies.heroSubtitle")}
             </p>
+            <AnswerSummary path="/case-studies" align="center" />
           </div>
         </section>
 
@@ -121,6 +122,7 @@ const CaseStudies = () => {
         </section>
 
 
+        <PageFacts path="/case-studies" />
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">

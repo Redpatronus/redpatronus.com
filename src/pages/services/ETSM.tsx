@@ -1,4 +1,7 @@
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/seo/PageSeo";
+import AnswerSummary from "@/components/seo/AnswerSummary";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import PageFacts from "@/components/seo/PageFacts";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -34,18 +37,13 @@ const features = [
 const ETSM = () => {
   return (
     <>
-      <Helmet>
-        <title>External Threat & Security Monitoring | Red Patronus</title>
-        <meta
-          name="description"
-          content="External Threat & Security Monitoring Suite using OSINT to provide continuous surveillance and proactive threat detection for your organization."
-        />
-      </Helmet>
-      <Layout>
+      <PageSeo path="/services/etsm" />
+      <Layout seoPath="/services/etsm">
         {/* Hero */}
         <section className="gradient-hero py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-4xl">
+              <Breadcrumbs path="/services/etsm" />
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <Radar className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">
@@ -58,6 +56,7 @@ const ETSM = () => {
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
                 Our External Threat & Security Monitoring service harnesses the power of OSINT to provide continuous, automated surveillance of publicly available data, ensuring your organization stays one step ahead of potential threats.
               </p>
+              <AnswerSummary path="/services/etsm" />
             </div>
           </div>
         </section>
@@ -87,6 +86,7 @@ const ETSM = () => {
         </section>
 
         {/* CTA */}
+        <PageFacts path="/services/etsm" />
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">

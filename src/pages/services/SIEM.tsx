@@ -1,4 +1,7 @@
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/seo/PageSeo";
+import AnswerSummary from "@/components/seo/AnswerSummary";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import PageFacts from "@/components/seo/PageFacts";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -34,18 +37,13 @@ const features = [
 const SIEM = () => {
   return (
     <>
-      <Helmet>
-        <title>SIEM & Audit Logging | Red Patronus</title>
-        <meta
-          name="description"
-          content="SIEM and Audit Logging services for real-time monitoring of security events, threat detection, and comprehensive log analysis."
-        />
-      </Helmet>
-      <Layout>
+      <PageSeo path="/services/siem" />
+      <Layout seoPath="/services/siem">
         {/* Hero */}
         <section className="gradient-hero py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-4xl">
+              <Breadcrumbs path="/services/siem" />
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <Activity className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">
@@ -58,6 +56,7 @@ const SIEM = () => {
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
                 In our SIEM project, we focus on the real-time monitoring of security events. This critical service enables us to identify threats, anomalies, and unauthorized activities as they occur, ensuring rapid detection and response.
               </p>
+              <AnswerSummary path="/services/siem" />
             </div>
           </div>
         </section>
@@ -87,6 +86,7 @@ const SIEM = () => {
         </section>
 
         {/* CTA */}
+        <PageFacts path="/services/siem" />
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">

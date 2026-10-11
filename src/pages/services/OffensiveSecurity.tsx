@@ -1,4 +1,7 @@
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/seo/PageSeo";
+import AnswerSummary from "@/components/seo/AnswerSummary";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import PageFacts from "@/components/seo/PageFacts";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -44,18 +47,13 @@ const features = [
 const OffensiveSecurity = () => {
   return (
     <>
-      <Helmet>
-        <title>Offensive Security Services | Red Patronus</title>
-        <meta
-          name="description"
-          content="Expert offensive security services including penetration testing, red team operations, and vulnerability assessments to identify security weaknesses."
-        />
-      </Helmet>
-      <Layout>
+      <PageSeo path="/services/offensive" />
+      <Layout seoPath="/services/offensive">
         {/* Hero */}
         <section className="gradient-hero py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-4xl">
+              <Breadcrumbs path="/services/offensive" />
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <Target className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">Offensive Security</span>
@@ -68,6 +66,7 @@ const OffensiveSecurity = () => {
                 by simulating real-world cyber attacks. Our expert Red Team works to identify vulnerabilities, test your
                 defenses, and provide actionable insights.
               </p>
+              <AnswerSummary path="/services/offensive" />
             </div>
           </div>
         </section>
@@ -93,6 +92,7 @@ const OffensiveSecurity = () => {
         </section>
 
         {/* CTA */}
+        <PageFacts path="/services/offensive" />
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
