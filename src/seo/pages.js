@@ -43,10 +43,10 @@ export const pages = [
       "Red Patronus | Cybersécurité et DORA à Bratislava",
     ),
     description: L(
-      "Bratislava cybersecurity firm for penetration testing, red teaming, cloud security, and DORA-aligned consulting. Professional pentest listed at €3,000 excl. VAT.",
-      "Bratislavská firma pre penetračné testy, red team, cloudovú bezpečnosť a poradenstvo v súlade s DORA. Profesionálny pentest je uvedený za 3 000 € bez DPH.",
-      "Cybersicherheitsfirma in Bratislava: Penetrationstests, Red Teaming, Cloud-Sicherheit und DORA-orientierte Beratung. Professioneller Pentest: 3.000 € zzgl. MwSt.",
-      "Société de cybersécurité à Bratislava : tests d'intrusion, red team, sécurité cloud et conseil aligné sur DORA. Pentest professionnel : 3 000 € HT.",
+      "Bratislava cybersecurity firm for penetration testing, red teaming, cloud security, and DORA-aligned consulting. Limited-time pentest offer: €3,000 excl. VAT.",
+      "Bratislavská firma pre penetračné testy, red team, cloudovú bezpečnosť a poradenstvo v súlade s DORA. Časovo obmedzená ponuka pentestu: 3 000 € bez DPH.",
+      "Cybersicherheitsfirma in Bratislava: Penetrationstests, Red Teaming, Cloud-Sicherheit und DORA-orientierte Beratung. Befristetes Pentest-Angebot: 3.000 € zzgl. MwSt.",
+      "Société de cybersécurité à Bratislava : tests d'intrusion, red team, sécurité cloud et conseil aligné sur DORA. Offre pentest limitée : 3 000 € HT.",
     ),
     keywords: L(
       "Red Patronus, DORA compliance, penetration testing Bratislava, red team, cloud security, cybersecurity Slovakia",
@@ -55,31 +55,63 @@ export const pages = [
       "Red Patronus, DORA, test d'intrusion Bratislava, red team, sécurité cloud",
     ),
     summary: L(
-      "Red Patronus is a cybersecurity company in Bratislava, Slovakia. It provides penetration testing, red team operations, defensive monitoring, cloud security on AWS, Azure and Google Cloud, and DORA-aligned consulting for enterprises and financial organisations. A professional pentest is listed at €3,000 excluding VAT.",
-      "Red Patronus je spoločnosť pre kybernetickú bezpečnosť v Bratislave na Slovensku. Poskytuje penetračné testovanie, red team operácie, defenzívny monitoring, cloudovú bezpečnosť na AWS, Azure a Google Cloud a poradenstvo v súlade s DORA pre podniky a finančné organizácie. Profesionálny pentest je uvedený za 3 000 € bez DPH.",
-      "Red Patronus ist ein Cybersicherheitsunternehmen in Bratislava, Slowakei. Es bietet Penetrationstests, Red-Team-Einsätze, defensive Überwachung, Cloud-Sicherheit auf AWS, Azure und Google Cloud sowie DORA-orientierte Beratung für Unternehmen und Finanzorganisationen. Ein professioneller Pentest ist mit 3.000 € zzgl. MwSt. angegeben.",
-      "Red Patronus est une société de cybersécurité à Bratislava, en Slovaquie. Elle propose des tests d'intrusion, des opérations de red team, une surveillance défensive, la sécurité cloud sur AWS, Azure et Google Cloud, et du conseil aligné sur DORA pour les entreprises et les organisations financières. Un pentest professionnel est indiqué à 3 000 € HT.",
+      "Red Patronus is a cybersecurity company in Bratislava, Slovakia, founded in 2005. It provides penetration testing, red team operations, defensive monitoring, cloud security on AWS, Azure and Google Cloud, and DORA-aligned consulting for enterprises and financial organisations. A limited-time special offer prices a professional pentest at €3,000 excluding VAT, with no end date published.",
+      "Red Patronus je spoločnosť pre kybernetickú bezpečnosť v Bratislave na Slovensku, založená v roku 2005. Poskytuje penetračné testovanie, red team operácie, defenzívny monitoring, cloudovú bezpečnosť na AWS, Azure a Google Cloud a poradenstvo v súlade s DORA pre podniky a finančné organizácie. Časovo obmedzená špeciálna ponuka oceňuje profesionálny pentest na 3 000 € bez DPH a neuverejňuje dátum konca.",
+      "Red Patronus ist ein Cybersicherheitsunternehmen in Bratislava, Slowakei, gegründet 2005. Es bietet Penetrationstests, Red-Team-Einsätze, defensive Überwachung, Cloud-Sicherheit auf AWS, Azure und Google Cloud sowie DORA-orientierte Beratung für Unternehmen und Finanzorganisationen. Ein befristetes Sonderangebot nennt einen professionellen Pentest mit 3.000 € zzgl. MwSt., ohne veröffentlichtes Enddatum.",
+      "Red Patronus est une société de cybersécurité à Bratislava, en Slovaquie, fondée en 2005. Elle propose des tests d'intrusion, des opérations de red team, une surveillance défensive, la sécurité cloud sur AWS, Azure et Google Cloud, et du conseil aligné sur DORA pour les entreprises et les organisations financières. Une offre spéciale à durée limitée indique un pentest professionnel à 3 000 € HT, sans date de fin publiée.",
     ),
     tables: [
       {
         caption: L(
-          "Figures and offers published on the Red Patronus website",
-          "Údaje a ponuky uverejnené na webe Red Patronus",
-          "Auf der Website von Red Patronus veröffentlichte Angaben und Angebote",
-          "Chiffres et offres publiés sur le site Red Patronus",
+          "Facts and the current offer published on the Red Patronus website",
+          "Fakty a aktuálna ponuka uverejnené na webe Red Patronus",
+          "Fakten und das aktuelle Angebot auf der Website von Red Patronus",
+          "Faits et offre actuelle publiés sur le site Red Patronus",
         ),
         headers: [
           L("Item", "Položka", "Angabe", "Élément"),
           L("Published value", "Uverejnená hodnota", "Veröffentlichter Wert", "Valeur publiée"),
         ],
         rows: [
-          { cells: [L("Years of excellence", "Roky excelentnosti", "Jahre Exzellenz", "Années d'excellence"), "15+"] },
-          { cells: [L("Enterprise clients", "Podnikoví klienti", "Unternehmenskunden", "Clients entreprises"), "20+"] },
-          { cells: [L("Security experts", "Bezpečnostní experti", "Sicherheitsexperten", "Experts en sécurité"), "10+"] },
+          {
+            cells: [
+              L("Legal name", "Obchodné meno", "Firmenname", "Raison sociale"),
+              "Redpatronus s.r.o.",
+            ],
+          },
+          {
+            cells: [
+              L("Founded", "Založená", "Gegründet", "Fondée"),
+              "2005",
+            ],
+          },
+          {
+            cells: [
+              L("Office", "Sídlo", "Büro", "Bureau"),
+              "Mlynské nivy 48, 821 09 Bratislava, Slovakia",
+            ],
+          },
+          {
+            cells: [
+              L("Client counts and team size", "Počty klientov a veľkosť tímu", "Kundenzahlen und Teamgröße", "Nombre de clients et taille de l'équipe"),
+              L("Not published", "Neuverejnené", "Nicht veröffentlicht", "Non publié"),
+            ],
+          },
           {
             cells: [
               L("Professional penetration test", "Profesionálny penetračný test", "Professioneller Penetrationstest", "Test d'intrusion professionnel"),
-              L("€3,000 excl. VAT", "3 000 € bez DPH", "3.000 € zzgl. MwSt.", "3 000 € HT"),
+              L(
+                "€3,000 excl. VAT, limited-time special offer, no published end date, not standard pricing",
+                "3 000 € bez DPH, časovo obmedzená špeciálna ponuka, bez uverejneného dátumu konca, nie bežná cena",
+                "3.000 € zzgl. MwSt., befristetes Sonderangebot, kein veröffentlichtes Enddatum, kein Standardpreis",
+                "3 000 € HT, offre spéciale à durée limitée, sans date de fin publiée, pas le tarif habituel",
+              ),
+            ],
+          },
+          {
+            cells: [
+              L("Prices for other services", "Ceny ostatných služieb", "Preise anderer Leistungen", "Prix des autres services"),
+              L("Not published on this site", "Na tomto webe neuverejnené", "Auf dieser Website nicht veröffentlicht", "Non publié sur ce site"),
             ],
           },
           {
@@ -87,25 +119,6 @@ export const pages = [
               L("Stated response time", "Uvedená doba odozvy", "Angegebene Antwortzeit", "Délai de réponse indiqué"),
               L("Within 24 hours", "Do 24 hodín", "Innerhalb von 24 Stunden", "Sous 24 heures"),
             ],
-          },
-          {
-            cells: [
-              L("On the market since", "Na trhu od roku", "Am Markt seit", "Sur le marché depuis"),
-              L(
-                "2005, stated on the Slovak careers page",
-                "2005, uvedené na slovenskej kariérnej stránke",
-                "2005, auf der slowakischen Karriereseite genannt",
-                "2005, indiqué sur la page carrières en slovaque",
-              ),
-            ],
-            todo: "founding-date",
-          },
-          {
-            cells: [
-              L("Prices for other services", "Ceny ostatných služieb", "Preise anderer Leistungen", "Prix des autres services"),
-              L("Not published on this site", "Na tomto webe neuverejnené", "Auf dieser Website nicht veröffentlicht", "Non publié sur ce site"),
-            ],
-            todo: "other-prices",
           },
         ],
       },
@@ -118,11 +131,11 @@ export const pages = [
         },
         {
           q: "How much does a Red Patronus penetration test cost?",
-          a: "The site publishes one fixed price: €3,000 excluding VAT for a professional penetration test of a web application or external infrastructure. It includes testing aligned with OWASP Top 10 and PTES, an executive summary, a technical report with proof of concept, and risk-prioritized remediation guidance. If no vulnerability is found, the next year's pentest is free of charge.",
+          a: "The only published price is a limited-time special offer, not standard pricing: €3,000 excluding VAT for a professional penetration test of a web application or external infrastructure. No end date is published. It includes testing aligned with OWASP Top 10 and PTES, an executive summary, a technical report with proof of concept, and risk-prioritized remediation guidance. If no vulnerability is found, the next year's pentest is free of charge.",
         },
         {
           q: "How can I contact Red Patronus?",
-          a: "Email info@redpatronus.com or call +421 948 446 778. The contact page lists Lenardova 1147/12, Bratislava 851 01, Slovakia, and says the team responds within 24 hours. The footer also lists Mlynské nivy 48, Bratislava 821 09, Slovakia.",
+          a: "Email info@redpatronus.com or call +421 948 446 778. The office is Mlynské nivy 48, 821 09 Bratislava, Slovakia. The contact page says the team responds within 24 hours.",
         },
         {
           q: "Which standards does the Red Patronus homepage list?",
@@ -136,11 +149,11 @@ export const pages = [
         },
         {
           q: "Koľko stojí penetračný test od Red Patronus?",
-          a: "Web uverejňuje jednu pevnú cenu: 3 000 € bez DPH za profesionálny penetračný test webovej aplikácie alebo externej infraštruktúry. Zahŕňa testovanie podľa OWASP Top 10 a PTES, manažérske zhrnutie, technickú správu s proof of concept a odporúčania zoradené podľa rizika. Ak sa nenájde žiadna zraniteľnosť, pentest v budúcom roku je zdarma.",
+          a: "Jediná uverejnená cena je časovo obmedzená špeciálna ponuka, nie bežný cenník: 3 000 € bez DPH za profesionálny penetračný test webovej aplikácie alebo externej infraštruktúry. Dátum konca nie je uverejnený. Zahŕňa testovanie podľa OWASP Top 10 a PTES, manažérske zhrnutie, technickú správu s proof of concept a odporúčania zoradené podľa rizika. Ak sa nenájde žiadna zraniteľnosť, pentest v budúcom roku je zdarma.",
         },
         {
           q: "Ako kontaktovať Red Patronus?",
-          a: "Napíšte na info@redpatronus.com alebo volajte +421 948 446 778. Kontaktná stránka uvádza Lenardova 1147/12, Bratislava 851 01, Slovensko, a odpoveď do 24 hodín. Pätička webu uvádza aj Mlynské nivy 48, Bratislava 821 09, Slovensko.",
+          a: "Napíšte na info@redpatronus.com alebo volajte +421 948 446 778. Sídlo je Mlynské nivy 48, 821 09 Bratislava, Slovensko. Tím odpovedá do 24 hodín.",
         },
         {
           q: "Aké štandardy uvádza domovská stránka Red Patronus?",
@@ -154,11 +167,11 @@ export const pages = [
         },
         {
           q: "Was kostet ein Penetrationstest von Red Patronus?",
-          a: "Die Website nennt einen Festpreis: 3.000 € zzgl. MwSt. für einen professionellen Penetrationstest einer Webanwendung oder externen Infrastruktur. Enthalten sind Tests nach OWASP Top 10 und PTES, eine Management-Zusammenfassung, ein technischer Bericht mit Proof of Concept und risikopriorisierte Behebungshinweise. Wird keine Schwachstelle gefunden, ist der Pentest im nächsten Jahr kostenlos.",
+          a: "Der einzige veröffentlichte Preis ist ein befristetes Sonderangebot, kein Standardpreis: 3.000 € zzgl. MwSt. für einen professionellen Penetrationstest einer Webanwendung oder externen Infrastruktur. Ein Enddatum ist nicht veröffentlicht. Enthalten sind Tests nach OWASP Top 10 und PTES, eine Management-Zusammenfassung, ein technischer Bericht mit Proof of Concept und risikopriorisierte Behebungshinweise. Wird keine Schwachstelle gefunden, ist der Pentest im nächsten Jahr kostenlos.",
         },
         {
           q: "Wie erreiche ich Red Patronus?",
-          a: "E-Mail an info@redpatronus.com oder Anruf unter +421 948 446 778. Die Kontaktseite nennt Lenardova 1147/12, Bratislava 851 01, Slowakei, und eine Antwort innerhalb von 24 Stunden. Die Fußzeile nennt außerdem Mlynské nivy 48, Bratislava 821 09, Slowakei.",
+          a: "E-Mail an info@redpatronus.com oder Anruf unter +421 948 446 778. Das Büro ist Mlynské nivy 48, 821 09 Bratislava, Slowakei. Die Kontaktseite nennt eine Antwort innerhalb von 24 Stunden.",
         },
         {
           q: "Welche Standards nennt die Startseite von Red Patronus?",
@@ -172,11 +185,11 @@ export const pages = [
         },
         {
           q: "Combien coûte un test d'intrusion Red Patronus ?",
-          a: "Le site publie un prix fixe : 3 000 € HT pour un test d'intrusion professionnel d'une application web ou d'une infrastructure externe. Il comprend des tests alignés sur l'OWASP Top 10 et PTES, une synthèse de direction, un rapport technique avec preuve de concept et des recommandations priorisées par le risque. Si aucune vulnérabilité n'est trouvée, le pentest de l'année suivante est offert.",
+          a: "Le seul prix publié est une offre spéciale à durée limitée, pas le tarif habituel : 3 000 € HT pour un test d'intrusion professionnel d'une application web ou d'une infrastructure externe. Aucune date de fin n'est publiée. Il comprend des tests alignés sur l'OWASP Top 10 et PTES, une synthèse de direction, un rapport technique avec preuve de concept et des recommandations priorisées par le risque. Si aucune vulnérabilité n'est trouvée, le pentest de l'année suivante est offert.",
         },
         {
           q: "Comment contacter Red Patronus ?",
-          a: "Écrivez à info@redpatronus.com ou appelez le +421 948 446 778. La page contact indique Lenardova 1147/12, Bratislava 851 01, Slovaquie, et une réponse sous 24 heures. Le pied de page indique aussi Mlynské nivy 48, Bratislava 821 09, Slovaquie.",
+          a: "Écrivez à info@redpatronus.com ou appelez le +421 948 446 778. Le bureau est Mlynské nivy 48, 821 09 Bratislava, Slovaquie. La page contact indique une réponse sous 24 heures.",
         },
         {
           q: "Quelles normes la page d'accueil de Red Patronus cite-t-elle ?",
@@ -417,10 +430,10 @@ export const pages = [
     serviceName: "Penetration testing",
     title: "Penetration Testing Services | Red Patronus",
     description:
-      "Web, network, mobile, and API penetration testing by Red Patronus, from reconnaissance to reporting. Fixed-price test: €3,000 excl. VAT.",
+      "Web, network, mobile, and API penetration testing by Red Patronus, from reconnaissance to reporting. Limited-time offer: €3,000 excl. VAT.",
     keywords: "penetration testing, OWASP, PTES, web application pentest, API security testing, Red Patronus",
     summary:
-      "Red Patronus penetration testing covers web applications, internal and external networks, iOS and Android apps, and REST, GraphQL, and SOAP APIs. The published method runs from reconnaissance and enumeration through controlled exploitation, post-exploitation, and reporting. A fixed-price professional test of a web app or external infrastructure is €3,000 excluding VAT.",
+      "Red Patronus penetration testing covers web applications, internal and external networks, iOS and Android apps, and REST, GraphQL, and SOAP APIs. The published method runs from reconnaissance and enumeration through controlled exploitation, post-exploitation, and reporting. A limited-time special offer, not standard pricing, lists a web app or external infrastructure test at €3,000 excluding VAT. No end date is published.",
     tables: [
       {
         caption: "Penetration testing method published by Red Patronus",
@@ -434,19 +447,18 @@ export const pages = [
         ],
       },
       {
-        caption: "Professional penetration test offer published on the homepage",
+        caption: "Limited-time special offer for a professional penetration test",
         headers: ["Term", "Published detail"],
         rows: [
-          { cells: ["Price", "€3,000 excluding VAT, fixed price"] },
+          { cells: ["Offer type", "Limited-time special offer, not standard pricing"] },
+          { cells: ["End date", "Not published"] },
+          { cells: ["Price", "€3,000 excluding VAT"] },
           { cells: ["Scope", "Web application or external infrastructure"] },
           { cells: ["Method named", "OWASP Top 10 and PTES"] },
           { cells: ["Delivered documents", "Executive summary and technical report with proof of concept"] },
           { cells: ["Remediation", "Risk-prioritized guidance"] },
           { cells: ["Zero-findings guarantee", "If no vulnerability is found, next year's pentest is free of charge"] },
-          {
-            cells: ["Other test prices", "Not published on this site"],
-            todo: "other-prices",
-          },
+          { cells: ["Other test prices", "Not published on this site"] },
         ],
       },
     ],
@@ -457,7 +469,7 @@ export const pages = [
       },
       {
         q: "What penetration testing method does Red Patronus publish?",
-        a: "Five phases: reconnaissance, enumeration, exploitation, post-exploitation, and reporting. The homepage offer also says the fixed-price test is aligned with OWASP Top 10 and PTES.",
+        a: "Five phases: reconnaissance, enumeration, exploitation, post-exploitation, and reporting. The homepage special offer also says the test is aligned with OWASP Top 10 and PTES.",
       },
       {
         q: "What do you receive after a Red Patronus penetration test?",
@@ -465,7 +477,7 @@ export const pages = [
       },
       {
         q: "How much is the published Red Patronus pentest?",
-        a: "€3,000 excluding VAT for a web application or external infrastructure. If no vulnerability is found, the next year's pentest is free of charge. Prices for other scopes are not published.",
+        a: "€3,000 excluding VAT for a web application or external infrastructure. This is a limited-time special offer, not standard pricing, and no end date is published. If no vulnerability is found, the next year's pentest is free of charge. Prices for other scopes are not published.",
       },
     ],
     related: ["/services/offensive", "/services/red-team", "/services/phishing", "/contact"],
@@ -533,10 +545,7 @@ export const pages = [
           { cells: ["NIST Cybersecurity Framework", "Compliance assessment and readiness"] },
           { cells: ["CIS Controls", "Compliance assessment and readiness"] },
           { cells: ["CMMC", "Compliance assessment and readiness"] },
-          {
-            cells: ["Consulting price", "Not published on this site"],
-            todo: "other-prices",
-          },
+          { cells: ["Consulting price", "Not published on this site"] },
         ],
       },
     ],
@@ -551,7 +560,7 @@ export const pages = [
       },
       {
         q: "Is a security consulting price published?",
-        a: "No. The only published price on the site is the €3,000 excluding VAT professional penetration test. Consulting fees are not listed.",
+        a: "No. Consulting fees are not listed. The only published price is a limited-time special offer of €3,000 excluding VAT for a professional penetration test, not standard pricing. No end date is published.",
       },
     ],
     related: ["/services/compliance", "/services/penetration-testing", "/services/cloud-security", "/contact"],
@@ -588,7 +597,7 @@ export const pages = [
       },
       {
         q: "Does Red Patronus publish a cloud security price?",
-        a: "No. The cloud security page does not list a fee. The only published price on the site is the €3,000 excluding VAT penetration test.",
+        a: "No. The cloud security page does not list a fee. The only published price is a limited-time special offer of €3,000 excluding VAT for a penetration test, not standard pricing.",
       },
     ],
     related: ["/services/iam", "/services/defensive", "/services/compliance", "/contact"],
@@ -670,7 +679,7 @@ export const pages = [
       },
       {
         q: "Is a defensive security price published?",
-        a: "No. The defensive security page does not list a fee. The only published price on the site is the €3,000 excluding VAT penetration test.",
+        a: "No. The defensive security page does not list a fee. The only published price is a limited-time special offer of €3,000 excluding VAT for a penetration test, not standard pricing.",
       },
     ],
     related: ["/services/siem", "/services/etsm", "/services/iam", "/services/compliance"],
@@ -750,7 +759,7 @@ export const pages = [
       },
       {
         q: "Is a training price published?",
-        a: "No. The training page does not list a fee. The only published price on the site is the €3,000 excluding VAT penetration test.",
+        a: "No. The training page does not list a fee. The only published price is a limited-time special offer of €3,000 excluding VAT for a penetration test, not standard pricing.",
       },
     ],
     related: ["/services/phishing", "/services/compliance", "/services/defensive", "/contact"],
@@ -775,10 +784,7 @@ export const pages = [
           { cells: ["Gap analysis", "Where the current posture falls short of DORA and other requirements"] },
           { cells: ["Audit support", "Documentation to help pass DORA compliance assessments"] },
           { cells: ["Business continuity", "Design, implementation, and annual testing of ICT business continuity and disaster recovery plans"] },
-          {
-            cells: ["Compliance price", "Not published on this site"],
-            todo: "other-prices",
-          },
+          { cells: ["Compliance price", "Not published on this site"] },
         ],
       },
     ],
@@ -935,17 +941,17 @@ export const pages = [
       "À propos de Red Patronus | Cybersécurité à Bratislava",
     ),
     description: L(
-      "About Red Patronus, a Bratislava cybersecurity firm. The site states 15+ years of excellence, 20+ enterprise clients, and 10+ security experts.",
-      "O spoločnosti Red Patronus z Bratislavy. Web uvádza 15+ rokov excelentnosti, 20+ podnikových klientov a 10+ bezpečnostných expertov.",
-      "Über Red Patronus, ein Cybersicherheitsunternehmen in Bratislava. Die Website nennt 15+ Jahre Exzellenz, 20+ Unternehmenskunden und 10+ Sicherheitsexperten.",
-      "À propos de Red Patronus, société de cybersécurité à Bratislava. Le site indique 15+ années d'excellence, 20+ clients entreprises et 10+ experts en sécurité.",
+      "About Red Patronus (Redpatronus s.r.o.), a Bratislava cybersecurity firm founded in 2005. Client counts and team size are not published.",
+      "O spoločnosti Red Patronus (Redpatronus s.r.o.) z Bratislavy, založenej v roku 2005. Počty klientov a veľkosť tímu web neuverejňuje.",
+      "Über Red Patronus (Redpatronus s.r.o.), ein 2005 gegründetes Cybersicherheitsunternehmen in Bratislava. Kundenzahlen und Teamgröße sind nicht veröffentlicht.",
+      "À propos de Red Patronus (Redpatronus s.r.o.), société de cybersécurité à Bratislava fondée en 2005. Le nombre de clients et la taille de l'équipe ne sont pas publiés.",
     ),
     keywords: L("about Red Patronus, Bratislava cybersecurity company, security team, DORA"),
     summary: L(
-      "Red Patronus describes itself as a cybersecurity partner for enterprises that want offensive security and compliance support. The about page says the firm was founded by security veterans and that its mission is to find and help fix vulnerabilities before they are exploited. Homepage figures are 15+ years, 20+ enterprise clients, and 10+ experts. No founder is named.",
-      "Red Patronus sa opisuje ako partner kybernetickej bezpečnosti pre podniky, ktoré chcú ofenzívnu bezpečnosť a podporu súladu. Stránka O nás hovorí, že firmu založili bezpečnostní veteráni a jej poslaním je nájsť a pomôcť opraviť zraniteľnosti skôr, ako ich niekto zneužije. Domovská stránka uvádza 15+ rokov, 20+ podnikových klientov a 10+ expertov. Zakladateľ nie je menovaný.",
-      "Red Patronus beschreibt sich als Cybersicherheitspartner für Unternehmen, die offensive Sicherheit und Compliance-Unterstützung wollen. Die Über-uns-Seite sagt, die Firma sei von Sicherheitsveteranen gegründet worden und ihre Aufgabe sei, Schwachstellen zu finden und bei der Behebung zu helfen, bevor sie ausgenutzt werden. Die Startseite nennt 15+ Jahre, 20+ Unternehmenskunden und 10+ Experten. Kein Gründer ist namentlich genannt.",
-      "Red Patronus se décrit comme un partenaire de cybersécurité pour les entreprises qui veulent de la sécurité offensive et un appui à la conformité. La page À propos indique que la société a été fondée par des vétérans de la sécurité et que sa mission est de trouver et d'aider à corriger les vulnérabilités avant qu'elles soient exploitées. La page d'accueil indique 15+ années, 20+ clients entreprises et 10+ experts. Aucun fondateur n'est nommé.",
+      "Red Patronus, legally Redpatronus s.r.o., is a Bratislava cybersecurity firm founded in 2005. The about page says security veterans founded the firm and that its mission is to find and help fix vulnerabilities before they are exploited. The site does not name people or publish client counts or team size.",
+      "Red Patronus, právne Redpatronus s.r.o., je bratislavská firma pre kybernetickú bezpečnosť založená v roku 2005. Stránka O nás hovorí, že firmu založili bezpečnostní veteráni a jej poslaním je nájsť a pomôcť opraviť zraniteľnosti skôr, ako ich niekto zneužije. Web nemenovuje ľudí a neuverejňuje počty klientov ani veľkosť tímu.",
+      "Red Patronus, rechtlich Redpatronus s.r.o., ist ein 2005 gegründetes Cybersicherheitsunternehmen in Bratislava. Die Über-uns-Seite sagt, Sicherheitsveteranen hätten die Firma gegründet und ihre Aufgabe sei, Schwachstellen zu finden und bei der Behebung zu helfen, bevor sie ausgenutzt werden. Die Website nennt keine Personen und veröffentlicht keine Kundenzahlen oder Teamgröße.",
+      "Red Patronus, juridiquement Redpatronus s.r.o., est une société de cybersécurité à Bratislava fondée en 2005. La page À propos indique que des vétérans de la sécurité ont fondé la société et que sa mission est de trouver et d'aider à corriger les vulnérabilités avant qu'elles soient exploitées. Le site ne nomme personne et ne publie ni le nombre de clients ni la taille de l'équipe.",
     ),
     tables: [
       {
@@ -960,22 +966,20 @@ export const pages = [
           L("Published value", "Uverejnená hodnota", "Veröffentlichter Wert", "Valeur publiée"),
         ],
         rows: [
-          { cells: [L("Years of excellence", "Roky excelentnosti", "Jahre Exzellenz", "Années d'excellence"), "15+"] },
-          { cells: [L("Enterprise clients", "Podnikoví klienti", "Unternehmenskunden", "Clients entreprises"), "20+"] },
-          { cells: [L("Security experts", "Bezpečnostní experti", "Sicherheitsexperten", "Experts en sécurité"), "10+"] },
+          { cells: [L("Legal name", "Obchodné meno", "Firmenname", "Raison sociale"), "Redpatronus s.r.o."] },
+          { cells: [L("Company ID (IČO)", "IČO", "Unternehmens-ID (IČO)", "Identifiant (IČO)"), "35968788"] },
+          { cells: [L("Founded", "Založená", "Gegründet", "Fondée"), "2005"] },
           {
             cells: [
-              L("On the market since", "Na trhu od roku", "Am Markt seit", "Sur le marché depuis"),
-              L("2005 on the Slovak careers page", "2005 na slovenskej kariérnej stránke", "2005 auf der slowakischen Karriereseite", "2005 sur la page carrières en slovaque"),
+              L("Office", "Sídlo", "Büro", "Bureau"),
+              "Mlynské nivy 48, 821 09 Bratislava, Slovakia",
             ],
-            todo: "founding-date",
           },
           {
             cells: [
-              L("Founder names", "Mená zakladateľov", "Namen der Gründer", "Noms des fondateurs"),
-              L("Not published on this site", "Na tomto webe neuverejnené", "Auf dieser Website nicht veröffentlicht", "Non publié sur ce site"),
+              L("Client counts and team size", "Počty klientov a veľkosť tímu", "Kundenzahlen und Teamgröße", "Nombre de clients et taille de l'équipe"),
+              L("Not published", "Neuverejnené", "Nicht veröffentlicht", "Non publié"),
             ],
-            todo: "founders",
           },
           {
             cells: [
@@ -997,8 +1001,8 @@ export const pages = [
           a: "To help organisations find and fix security vulnerabilities before they are exploited, combining technical expertise with an adversary mindset. The page says the team explains findings and helps remediate them, and that client data and findings are kept confidential.",
         },
         {
-          q: "How large does the site say Red Patronus is?",
-          a: "The homepage publishes 15+ years of excellence, 20+ enterprise clients, and 10+ security experts. The about page says consultants have backgrounds in enterprise security, government agencies, and technology companies. It does not name individuals.",
+          q: "Does the site publish client counts or team size?",
+          a: "No. Red Patronus does not publish client counts or headcount. The about page says consultants have backgrounds in enterprise security, government agencies, and technology companies, and that security veterans founded the firm. It does not name individuals.",
         },
       ],
       sk: [
@@ -1011,8 +1015,8 @@ export const pages = [
           a: "Pomáhať organizáciám nájsť a opraviť bezpečnostné zraniteľnosti skôr, ako ich niekto zneužije, spojením technickej odbornosti a uvažovania útočníka. Stránka hovorí, že tím nálezy vysvetlí a pomôže s nápravou a že údaje klientov a nálezy zostávajú dôverné.",
         },
         {
-          q: "Akú veľkosť web o Red Patronus uvádza?",
-          a: "Domovská stránka uverejňuje 15+ rokov excelentnosti, 20+ podnikových klientov a 10+ bezpečnostných expertov. Stránka O nás hovorí, že konzultanti majú zázemie v podnikovej bezpečnosti, štátnych agentúrach a technologických firmách. Mená neuvádza.",
+          q: "Uverejňuje web počty klientov alebo veľkosť tímu?",
+          a: "Nie. Red Patronus neuverejňuje počty klientov ani počet ľudí. Stránka O nás hovorí, že konzultanti majú zázemie v podnikovej bezpečnosti, štátnych agentúrach a technologických firmách a že firmu založili bezpečnostní veteráni. Mená neuvádza.",
         },
       ],
       de: [
@@ -1025,8 +1029,8 @@ export const pages = [
           a: "Organisationen dabei zu helfen, Schwachstellen zu finden und zu beheben, bevor sie ausgenutzt werden, mit technischer Expertise und der Sicht eines Angreifers. Die Seite sagt, das Team erkläre Befunde und helfe bei der Behebung, und Kundeninformationen sowie Befunde blieben vertraulich.",
         },
         {
-          q: "Wie groß nennt die Website Red Patronus?",
-          a: "Die Startseite nennt 15+ Jahre Exzellenz, 20+ Unternehmenskunden und 10+ Sicherheitsexperten. Die Über-uns-Seite sagt, Berater kämen aus Unternehmenssicherheit, Behörden und Technologieunternehmen. Namen nennt sie nicht.",
+          q: "Veröffentlicht die Website Kundenzahlen oder die Teamgröße?",
+          a: "Nein. Red Patronus veröffentlicht keine Kundenzahlen und keine Mitarbeiterzahl. Die Über-uns-Seite sagt, Berater kämen aus Unternehmenssicherheit, Behörden und Technologieunternehmen und Sicherheitsveteranen hätten die Firma gegründet. Namen nennt sie nicht.",
         },
       ],
       fr: [
@@ -1039,8 +1043,8 @@ export const pages = [
           a: "Aider les organisations à trouver et corriger les vulnérabilités avant qu'elles soient exploitées, en combinant expertise technique et état d'esprit d'attaquant. La page indique que l'équipe explique les constats et aide à les corriger, et que les données et constats clients restent confidentiels.",
         },
         {
-          q: "Quelle taille le site attribue-t-il à Red Patronus ?",
-          a: "La page d'accueil indique 15+ années d'excellence, 20+ clients entreprises et 10+ experts en sécurité. La page À propos indique que les consultants viennent de la sécurité d'entreprise, d'agences publiques et d'entreprises technologiques. Elle ne nomme personne.",
+          q: "Le site publie-t-il le nombre de clients ou la taille de l'équipe ?",
+          a: "Non. Red Patronus ne publie ni le nombre de clients ni l'effectif. La page À propos indique que les consultants viennent de la sécurité d'entreprise, d'agences publiques et d'entreprises technologiques, et que des vétérans de la sécurité ont fondé la société. Elle ne nomme personne.",
         },
       ],
     },
@@ -1221,17 +1225,17 @@ export const pages = [
       "Contacter Red Patronus | Bratislava",
     ),
     description: L(
-      "Contact Red Patronus at info@redpatronus.com or +421 948 446 778. The contact page lists Lenardova 1147/12, Bratislava 851 01, and a reply within 24 hours.",
-      "Kontaktujte Red Patronus na info@redpatronus.com alebo +421 948 446 778. Kontaktná stránka uvádza Lenardova 1147/12, Bratislava 851 01 a odpoveď do 24 hodín.",
-      "Kontakt zu Red Patronus: info@redpatronus.com oder +421 948 446 778. Die Kontaktseite nennt Lenardova 1147/12, Bratislava 851 01 und eine Antwort innerhalb von 24 Stunden.",
-      "Contactez Red Patronus : info@redpatronus.com ou +421 948 446 778. La page contact indique Lenardova 1147/12, Bratislava 851 01 et une réponse sous 24 heures.",
+      "Contact Red Patronus at info@redpatronus.com or +421 948 446 778. Office: Mlynské nivy 48, 821 09 Bratislava. Reply within 24 hours.",
+      "Kontaktujte Red Patronus na info@redpatronus.com alebo +421 948 446 778. Sídlo: Mlynské nivy 48, 821 09 Bratislava. Odpoveď do 24 hodín.",
+      "Kontakt zu Red Patronus: info@redpatronus.com oder +421 948 446 778. Büro: Mlynské nivy 48, 821 09 Bratislava. Antwort innerhalb von 24 Stunden.",
+      "Contactez Red Patronus : info@redpatronus.com ou +421 948 446 778. Bureau : Mlynské nivy 48, 821 09 Bratislava. Réponse sous 24 heures.",
     ),
     keywords: L("contact Red Patronus, info@redpatronus.com, Bratislava cybersecurity, penetration test quote"),
     summary: L(
-      "Contact Red Patronus by email at info@redpatronus.com or by phone at +421 948 446 778. The contact page lists the location as Lenardova 1147/12, Bratislava 851 01, Slovakia, and says the team responds within 24 hours. The site footer lists a second Bratislava address at Mlynské nivy 48, 821 09.",
-      "Red Patronus kontaktujte e-mailom info@redpatronus.com alebo telefónom +421 948 446 778. Kontaktná stránka uvádza adresu Lenardova 1147/12, Bratislava 851 01, Slovensko a odpoveď do 24 hodín. Pätička webu uvádza druhú bratislavskú adresu Mlynské nivy 48, 821 09.",
-      "Kontaktieren Sie Red Patronus per E-Mail unter info@redpatronus.com oder telefonisch unter +421 948 446 778. Die Kontaktseite nennt Lenardova 1147/12, Bratislava 851 01, Slowakei, und eine Antwort innerhalb von 24 Stunden. Die Fußzeile nennt eine zweite Adresse in Bratislava: Mlynské nivy 48, 821 09.",
-      "Contactez Red Patronus par e-mail à info@redpatronus.com ou par téléphone au +421 948 446 778. La page contact indique Lenardova 1147/12, Bratislava 851 01, Slovaquie, et une réponse sous 24 heures. Le pied de page indique une seconde adresse à Bratislava : Mlynské nivy 48, 821 09.",
+      "Contact Red Patronus, legally Redpatronus s.r.o., by email at info@redpatronus.com or by phone at +421 948 446 778. The office is at Mlynské nivy 48, 821 09 Bratislava, Slovakia. The contact page says the team responds within 24 hours.",
+      "Red Patronus, právne Redpatronus s.r.o., kontaktujte e-mailom info@redpatronus.com alebo telefónom +421 948 446 778. Sídlo je Mlynské nivy 48, 821 09 Bratislava, Slovensko. Kontaktná stránka hovorí, že tím odpovie do 24 hodín.",
+      "Kontaktieren Sie Red Patronus, rechtlich Redpatronus s.r.o., per E-Mail unter info@redpatronus.com oder telefonisch unter +421 948 446 778. Das Büro ist Mlynské nivy 48, 821 09 Bratislava, Slowakei. Die Kontaktseite sagt, das Team antworte innerhalb von 24 Stunden.",
+      "Contactez Red Patronus, juridiquement Redpatronus s.r.o., par e-mail à info@redpatronus.com ou par téléphone au +421 948 446 778. Le bureau est Mlynské nivy 48, 821 09 Bratislava, Slovaquie. La page contact indique une réponse sous 24 heures.",
     ),
     tables: [
       {
@@ -1246,21 +1250,17 @@ export const pages = [
           L("Published detail", "Uverejnený údaj", "Veröffentlichte Angabe", "Détail publié"),
         ],
         rows: [
+          { cells: [L("Legal name", "Obchodné meno", "Firmenname", "Raison sociale"), "Redpatronus s.r.o."] },
+          { cells: [L("Company ID (IČO)", "IČO", "Unternehmens-ID (IČO)", "Identifiant (IČO)"), "35968788"] },
+          { cells: [L("Tax ID (DIČ)", "DIČ", "Steuer-ID (DIČ)", "Identifiant fiscal (DIČ)"), "2022108022"] },
+          { cells: [L("VAT ID", "IČ DPH", "USt-IdNr.", "N° TVA"), "SK2022108022"] },
           { cells: [L("Email", "E-mail", "E-Mail", "E-mail"), "info@redpatronus.com"] },
           { cells: [L("Phone", "Telefón", "Telefon", "Téléphone"), "+421 948 446 778"] },
           {
             cells: [
-              L("Address on the contact page", "Adresa na kontaktnej stránke", "Adresse auf der Kontaktseite", "Adresse sur la page contact"),
-              "Lenardova 1147/12, Bratislava 851 01, Slovakia",
+              L("Office", "Sídlo", "Büro", "Bureau"),
+              "Mlynské nivy 48, 821 09 Bratislava, Slovakia",
             ],
-            todo: "address",
-          },
-          {
-            cells: [
-              L("Address in the footer", "Adresa v pätičke", "Adresse in der Fußzeile", "Adresse dans le pied de page"),
-              "Mlynské nivy 48, Bratislava 821 09, Slovakia",
-            ],
-            todo: "address",
           },
           {
             cells: [
@@ -1282,8 +1282,8 @@ export const pages = [
           a: "The contact page says the team responds within 24 hours. The confirmation text says a security consultant will be in touch within 24 hours.",
         },
         {
-          q: "Where does the website say Red Patronus is located?",
-          a: "The contact page lists Lenardova 1147/12, Bratislava 851 01, Slovakia. The footer lists Mlynské nivy 48, Bratislava 821 09, Slovakia. Both appear on the public site.",
+          q: "Where is the Red Patronus office?",
+          a: "Mlynské nivy 48, 821 09 Bratislava, Slovakia. The legal name is Redpatronus s.r.o., IČO 35968788.",
         },
       ],
       sk: [
@@ -1296,8 +1296,8 @@ export const pages = [
           a: "Kontaktná stránka hovorí, že tím odpovie do 24 hodín. Text po odoslaní hovorí, že sa ozve bezpečnostný konzultant do 24 hodín.",
         },
         {
-          q: "Kde web uvádza sídlo Red Patronus?",
-          a: "Kontaktná stránka uvádza Lenardova 1147/12, Bratislava 851 01, Slovensko. Pätička uvádza Mlynské nivy 48, Bratislava 821 09, Slovensko. Obe adresy sú na verejnom webe.",
+          q: "Kde je sídlo Red Patronus?",
+          a: "Mlynské nivy 48, 821 09 Bratislava, Slovensko. Obchodné meno je Redpatronus s.r.o., IČO 35968788.",
         },
       ],
       de: [
@@ -1310,8 +1310,8 @@ export const pages = [
           a: "Die Kontaktseite sagt, das Team antworte innerhalb von 24 Stunden. Der Bestätigungstext sagt, ein Sicherheitsberater melde sich innerhalb von 24 Stunden.",
         },
         {
-          q: "Wo nennt die Website den Sitz von Red Patronus?",
-          a: "Die Kontaktseite nennt Lenardova 1147/12, Bratislava 851 01, Slowakei. Die Fußzeile nennt Mlynské nivy 48, Bratislava 821 09, Slowakei. Beide Adressen stehen auf der öffentlichen Website.",
+          q: "Wo ist das Büro von Red Patronus?",
+          a: "Mlynské nivy 48, 821 09 Bratislava, Slowakei. Der Firmenname ist Redpatronus s.r.o., IČO 35968788.",
         },
       ],
       fr: [
@@ -1324,8 +1324,8 @@ export const pages = [
           a: "La page contact indique une réponse sous 24 heures. Le texte de confirmation indique qu'un consultant sécurité recontacte sous 24 heures.",
         },
         {
-          q: "Où le site situe-t-il Red Patronus ?",
-          a: "La page contact indique Lenardova 1147/12, Bratislava 851 01, Slovaquie. Le pied de page indique Mlynské nivy 48, Bratislava 821 09, Slovaquie. Les deux adresses figurent sur le site public.",
+          q: "Où se trouve le bureau de Red Patronus ?",
+          a: "Mlynské nivy 48, 821 09 Bratislava, Slovaquie. La raison sociale est Redpatronus s.r.o., IČO 35968788.",
         },
       ],
     },
@@ -1389,6 +1389,12 @@ export const pages = [
                 "1.800 EUR, in der slowakischen Anzeige genannt",
                 "1 800 EUR, indiqué dans l'annonce slovaque",
               ),
+            ],
+          },
+          {
+            cells: [
+              L("Posting dates", "Dátumy inzerátu", "Datum der Anzeige", "Dates de l'offre"),
+              L("Not published", "Neuverejnené", "Nicht veröffentlicht", "Non publié"),
             ],
             todo: "job-dates",
           },

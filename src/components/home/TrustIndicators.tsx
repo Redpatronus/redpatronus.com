@@ -46,9 +46,9 @@ const TrustIndicators = () => {
 
 
   const stats = [
-    { icon: Shield, value: "15+", labelKey: "trust.statsItems.years" },
-    { icon: Building2, value: "20+", labelKey: "trust.statsItems.clients" },
-    { icon: Users, value: "10+", labelKey: "trust.statsItems.experts" },
+    { icon: Shield, valueKey: "trust.statsItems.yearsValue", labelKey: "trust.statsItems.years" },
+    { icon: Building2, valueKey: "trust.statsItems.clientsValue", labelKey: "trust.statsItems.clients" },
+    { icon: Users, valueKey: "trust.statsItems.expertsValue", labelKey: "trust.statsItems.experts" },
   ];
 
   return (
@@ -81,8 +81,8 @@ const TrustIndicators = () => {
             {stats.map((stat, index) => (
               <div key={index}>
                 <stat.icon className="h-8 w-8 text-primary-foreground/80 mx-auto mb-3" />
-                <div className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-1">
-                  {stat.value}
+                <div className="font-display text-2xl lg:text-3xl font-bold text-primary-foreground mb-1">
+                  {t(stat.valueKey)}
                 </div>
                 <div className="font-body text-sm text-primary-foreground/80">{t(stat.labelKey)}</div>
               </div>

@@ -49,6 +49,19 @@ for (const page of pages) {
     return type === "Organization" || (Array.isArray(type) && type.includes("Organization"));
   });
   if (!org) fail("missing Organization");
+  if (org.legalName !== "Redpatronus s.r.o.") fail("legalName missing");
+  if (org.foundingDate !== "2005") fail("foundingDate missing");
+  if (org.address?.streetAddress !== "Mlynské nivy 48" || org.address?.postalCode !== "821 09" || org.address?.addressCountry !== "SK") {
+    fail("office address mismatch");
+  }
+  if (org.geo?.latitude !== 48.1442647 || org.geo?.longitude !== 17.1411326) fail("geo mismatch");
+  if (org.taxID !== "2022108022" || org.vatID !== "SK2022108022" || org.identifier?.value !== "35968788" || org.identifier?.propertyID !== "IČO") {
+    fail("legal identifiers mismatch");
+  }
+  if (!org.sameAs?.includes("https://x.com/Redpatronus")) fail("X profile missing from sameAs");
+  const offer = org.makesOffer;
+  if (!String(offer?.name || "").includes("Limited-time special offer")) fail("pentest offer is not labelled as a special offer");
+  if (serialized.includes("Lenardova") || serialized.includes("15+")) fail(`${page.path} still cites a removed address or headline statistic`);
   if (!ld["@graph"].some((node) => node["@type"] === "WebSite")) fail("missing WebSite");
   if (!ld["@graph"].some((node) => node["@type"] === "BreadcrumbList")) fail(`${page.path} missing breadcrumbs`);
 

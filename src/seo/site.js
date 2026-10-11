@@ -1,7 +1,7 @@
 /**
  * Site-wide entity data and structured-data builders.
- * Facts here are copied from pages already in this repo. Do not add a number
- * that the site does not state. Missing figures are OWNER_TODOS.
+ * Confirmed facts come from the owner. Do not add client counts, headcount,
+ * or other sensitive figures. Missing public assets stay in OWNER_TODOS.
  */
 
 import { pages } from "./pages.js";
@@ -18,29 +18,32 @@ export const SITE = {
   ogImageWidth: 1028,
   ogImageHeight: 300,
   ogImageAlt: "Red Patronus logo",
+  twitter: "@Redpatronus",
   updated: "2026-10-11",
+  legalName: "Redpatronus s.r.o.",
+  foundingDate: "2005",
+  ico: "35968788",
+  dic: "2022108022",
+  vatId: "SK2022108022",
   sameAs: [
     "https://www.linkedin.com/company/redpatronus",
     "https://github.com/Redpatronus",
+    "https://x.com/Redpatronus",
   ],
   description:
     "Red Patronus is a cybersecurity company in Bratislava, Slovakia. It provides penetration testing, red team operations, defensive monitoring, cloud security on AWS, Azure and Google Cloud, and DORA-aligned consulting for enterprises and financial organisations.",
-  addresses: [
-    {
-      source: "Address on the contact page",
-      street: "Lenardova 1147/12",
-      locality: "Bratislava",
-      postal: "851 01",
-      country: "SK",
-    },
-    {
-      source: "Address in the site footer",
-      street: "Mlynské nivy 48",
-      locality: "Bratislava",
-      postal: "821 09",
-      country: "SK",
-    },
-  ],
+  address: {
+    street: "Mlynské nivy 48",
+    locality: "Bratislava",
+    postal: "821 09",
+    country: "SK",
+    countryName: "Slovakia",
+  },
+  geo: {
+    latitude: 48.1442647,
+    longitude: 17.1411326,
+  },
+  mapUrl: "https://maps.app.goo.gl/6eXgHo3tW4x21h3q8",
 };
 
 export const ORG_ID = `${SITE.url}/#organization`;
@@ -49,28 +52,8 @@ export const WEBSITE_ID = `${SITE.url}/#website`;
 /** Placeholders the owner must replace with real data. Also written to llms.txt and HTML comments. */
 export const OWNER_TODOS = [
   {
-    id: "address",
-    text: "TODO(owner): Confirm the public business address. The contact page lists Lenardova 1147/12, Bratislava 851 01, Slovakia. The footer lists Mlynské nivy 48, Bratislava 821 09, Slovakia. Structured data publishes both, each labelled with the place it appears. Remove the one that is not current.",
-  },
-  {
-    id: "exact-stats",
-    text: "TODO(owner): Replace the published ranges with exact figures if you want them cited: homepage shows 15+ years of excellence, 20+ enterprise clients, and 10+ security experts. No exact client count, headcount, or assessment volume is in the repo.",
-  },
-  {
-    id: "other-prices",
-    text: "TODO(owner): Add published prices for every service other than the professional penetration test. The only price on the site is €3,000 excluding VAT for a web application or external infrastructure pentest.",
-  },
-  {
-    id: "founders",
-    text: "TODO(owner): Add founder and team names, roles, and real profile URLs if Person schema should name people. No founder or employee name is published on the site (the VIG Re quote is feature-flagged off and names a client, not staff).",
-  },
-  {
     id: "og-image",
     text: "TODO(owner): Add a 1200×630 social share image. Open Graph currently uses the existing logo PNG at /og-image.png (1028×300).",
-  },
-  {
-    id: "sameas",
-    text: "TODO(owner): Add any other official profile URLs (Google Business Profile, X, Facebook, YouTube, Crunchbase). The site only links LinkedIn (https://www.linkedin.com/company/redpatronus) and GitHub (https://github.com/Redpatronus).",
   },
   {
     id: "job-dates",
@@ -83,18 +66,6 @@ export const OWNER_TODOS = [
   {
     id: "certifications",
     text: "TODO(owner): State whether ISO 27001, DORA, and NIS2 are certifications held, formal attestations, or alignment targets, and add certificate IDs if they exist. The homepage lists them under Certifications & Standards and does not publish certificate numbers. Unused translation strings mention CREST, SOC 2, and OSCP, but those are not rendered.",
-  },
-  {
-    id: "legal-name",
-    text: "TODO(owner): Add the registered legal name and company ID (for example the Slovak obchodné meno and IČO) if they should appear in Organization schema. They are not in the repo.",
-  },
-  {
-    id: "geo",
-    text: "TODO(owner): Add latitude and longitude for the confirmed office if LocalBusiness geo coordinates should be published. They are not in the repo.",
-  },
-  {
-    id: "founding-date",
-    text: "TODO(owner): Confirm whether schema.org foundingDate should be 2005. The Slovak careers page says the company has been on the market since 2005 (na trhu od roku 2005). The English careers text does not state a year, so foundingDate is intentionally omitted from JSON-LD until you confirm it.",
   },
   {
     id: "search-console",
@@ -167,9 +138,10 @@ export function pentestOffer() {
   return {
     "@type": "Offer",
     "@id": `${SITE.url}/#pentest-offer`,
-    name: "Professional penetration test",
+    name: "Limited-time special offer: professional penetration test",
     description:
-      "Fixed price, excluding VAT, for a web application or external infrastructure. Testing is aligned with OWASP Top 10 and PTES. Includes an executive summary, a technical report with proof of concept, and risk-prioritized remediation guidance. If no vulnerability is found, the next year's pentest is free of charge.",
+      "Current limited-time special offer, not standard pricing. No end date is published. €3,000 excluding VAT for a web application or external infrastructure. Testing is aligned with OWASP Top 10 and PTES. Includes an executive summary, a technical report with proof of concept, and risk-prioritized remediation guidance. If no vulnerability is found, the next year's pentest is free of charge.",
+    category: "Limited-time special offer",
     price: "3000",
     priceCurrency: "EUR",
     url: `${SITE.url}/services/penetration-testing`,
@@ -179,6 +151,7 @@ export function pentestOffer() {
       price: "3000",
       priceCurrency: "EUR",
       valueAddedTaxIncluded: false,
+      description: "Limited-time special offer excluding VAT. Not standard pricing. No end date is published.",
     },
   };
 }
@@ -186,22 +159,33 @@ export function pentestOffer() {
 function organizationNode() {
   const servicePages = pages.filter((page) => page.schema === "Service");
   return {
-    "@type": ["ProfessionalService", "Organization"],
+    "@type": ["ProfessionalService", "LocalBusiness", "Organization"],
     "@id": ORG_ID,
     name: SITE.name,
+    legalName: SITE.legalName,
     alternateName: SITE.alternateName,
+    foundingDate: SITE.foundingDate,
     url: `${SITE.url}/`,
     logo: SITE.logo,
     image: SITE.ogImage,
     description: SITE.description,
     email: SITE.email,
     telephone: SITE.telephone,
-    address: postalAddress(SITE.addresses[0]),
-    location: SITE.addresses.map((address) => ({
-      "@type": "Place",
-      name: address.source,
-      address: postalAddress(address),
-    })),
+    taxID: SITE.dic,
+    vatID: SITE.vatId,
+    identifier: {
+      "@type": "PropertyValue",
+      name: "IČO",
+      propertyID: "IČO",
+      value: SITE.ico,
+    },
+    address: postalAddress(SITE.address),
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: SITE.geo.latitude,
+      longitude: SITE.geo.longitude,
+    },
+    hasMap: SITE.mapUrl,
     areaServed: [
       { "@type": "Country", name: "Slovakia" },
       { "@type": "Place", name: "Europe" },
@@ -408,6 +392,7 @@ export function renderHead(path, lang = "en") {
     `<meta data-rh="true" property="og:image:width" content="${SITE.ogImageWidth}" />`,
     `<meta data-rh="true" property="og:image:height" content="${SITE.ogImageHeight}" />`,
     `<meta data-rh="true" name="twitter:card" content="summary_large_image" />`,
+    `<meta data-rh="true" name="twitter:site" content="${SITE.twitter}" />`,
     `<meta data-rh="true" name="twitter:title" content="${escapeAttr(head.title)}" />`,
     `<meta data-rh="true" name="twitter:description" content="${escapeAttr(head.description)}" />`,
     `<meta data-rh="true" name="twitter:image" content="${SITE.ogImage}" />`,
@@ -504,7 +489,9 @@ export function renderLlms() {
   const lines = [];
   lines.push(`# ${SITE.name}`);
   lines.push("");
-  lines.push(`> ${SITE.description} A professional penetration test is listed at €3,000 excluding VAT.`);
+  lines.push(
+    `> ${SITE.description} A limited-time special offer prices a professional penetration test at €3,000 excluding VAT. That figure is not standard pricing, and no end date is published.`,
+  );
   lines.push("");
   lines.push(
     "The website is available in English, Slovak, German, and French. Add ?lang=en, ?lang=sk, ?lang=de, or ?lang=fr. Canonical URLs do not include the lang parameter.",
@@ -512,18 +499,22 @@ export function renderLlms() {
   lines.push("");
   lines.push("## Key facts published on the site");
   lines.push("");
-  lines.push(`- Brand name: ${SITE.name} (also written ${SITE.alternateName} in some headings and the GitHub organisation).`);
+  lines.push(`- Brand name: ${SITE.name}. Legal name: ${SITE.legalName}.`);
+  lines.push(`- IČO: ${SITE.ico}. DIČ: ${SITE.dic}. VAT ID: ${SITE.vatId}.`);
+  lines.push(`- Founded: ${SITE.foundingDate}.`);
   lines.push(`- Email: ${SITE.email}`);
   lines.push(`- Phone: ${SITE.telephoneDisplay}`);
-  for (const address of SITE.addresses) {
-    lines.push(
-      `- ${address.source}: ${address.street}, ${address.postal} ${address.locality}, Slovakia.`,
-    );
-  }
-  lines.push("- Homepage figures: 15+ years of excellence, 20+ enterprise clients, 10+ security experts.");
-  lines.push("- Slovak careers page: on the market since 2005.");
   lines.push(
-    "- Published price: professional penetration test, €3,000 excluding VAT, for a web application or external infrastructure, aligned with OWASP Top 10 and PTES. If no vulnerability is found, the next year's pentest is free of charge.",
+    `- Office: ${SITE.address.street}, ${SITE.address.postal} ${SITE.address.locality}, ${SITE.address.countryName}.`,
+  );
+  lines.push(
+    `- Coordinates: ${SITE.geo.latitude}, ${SITE.geo.longitude}. Resolved from the owner's Google Maps link (${SITE.mapUrl}), which redirects to the place pin for Mlynské nivy 48.`,
+  );
+  lines.push(
+    "- The site does not publish client counts, headcount, or assessment volume.",
+  );
+  lines.push(
+    "- Limited-time special offer, not standard pricing: professional penetration test, €3,000 excluding VAT, for a web application or external infrastructure, aligned with OWASP Top 10 and PTES. No end date is published. If no vulnerability is found, the next year's pentest is free of charge. Other service prices are not published.",
   );
   lines.push("- Contact page response time: within 24 hours.");
   lines.push(

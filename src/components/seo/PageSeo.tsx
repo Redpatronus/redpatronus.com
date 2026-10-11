@@ -34,6 +34,7 @@ const PageSeo = ({ path }: { path: string }) => {
       <meta property="og:image:width" content={String(SITE.ogImageWidth)} />
       <meta property="og:image:height" content={String(SITE.ogImageHeight)} />
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content={SITE.twitter} />
       <meta name="twitter:title" content={head.title} />
       <meta name="twitter:description" content={head.description} />
       <meta name="twitter:image" content={SITE.ogImage} />

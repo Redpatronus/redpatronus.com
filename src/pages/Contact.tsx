@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { SITE } from "@/seo/site.js";
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from "lucide-react";
 import { z } from "zod";
 import { useEffect } from "react";
@@ -171,9 +172,22 @@ const Contact = () => {
                     <div>
                       <h3 className="font-body font-semibold text-foreground mb-1">{t("contact.locationLabel")}</h3>
                       <p className="font-body text-muted-foreground">
-                        Lenardova 1147/12<br />
-                        Bratislava 851 01<br />
-                        Slovakia
+                        {SITE.address.street}<br />
+                        {SITE.address.postal} {SITE.address.locality}<br />
+                        {SITE.address.countryName}
+                      </p>
+                      <a
+                        href={SITE.mapUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-body text-sm text-primary hover:underline"
+                      >
+                        Google Maps
+                      </a>
+                      <p className="font-body text-sm text-muted-foreground mt-3 leading-relaxed">
+                        {SITE.legalName}<br />
+                        IČO {SITE.ico}<br />
+                        DIČ {SITE.dic} · IČ DPH {SITE.vatId}
                       </p>
                     </div>
                   </div>
