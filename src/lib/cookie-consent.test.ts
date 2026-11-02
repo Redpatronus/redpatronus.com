@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { describe, test } from "node:test";
 import { strictEqual } from "node:assert";
 import { hasAnalyticsConsent } from "./cookie-consent";
