@@ -30,6 +30,7 @@ import Phishing from "./pages/services/Phishing";
 import SIEM from "./pages/services/SIEM";
 import NotFound from "./pages/NotFound";
 import CookieConsent from "./components/CookieConsent";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
+            <GoogleAnalytics />
             <ScrollToTop />
             <Routes>
               <Route path="/" element={<Index />} />

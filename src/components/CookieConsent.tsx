@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
 import { Cookie, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const STORAGE_KEY = "rp-cookie-consent";
+import { COOKIE_CONSENT_KEY, saveCookieConsent } from "@/lib/cookie-consent";
 
 const CookieConsent = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
+    const stored = localStorage.getItem(COOKIE_CONSENT_KEY);
     if (!stored) {
       const t = setTimeout(() => setVisible(true), 400);
       return () => clearTimeout(t);
@@ -16,7 +15,7 @@ const CookieConsent = () => {
   }, []);
 
   const setChoice = (value: "accepted" | "declined") => {
-    localStorage.setItem(STORAGE_KEY, value);
+    saveCookieConsent(value);
     setVisible(false);
   };
 
