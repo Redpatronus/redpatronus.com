@@ -10,7 +10,7 @@ The website is available in English, Slovak, German, and French. Add ?lang=en, ?
 - IČO: 35968788. DIČ: 2022108022. VAT ID: SK2022108022.
 - Founded: 2005.
 - Email: info@redpatronus.com
-- Phone: +421 948 446 778
+- Phone: +41 43 588 07 94
 - Office: Mlynské nivy 48, 821 09 Bratislava, Slovakia.
 - Coordinates: 48.1442647, 17.1411326. Resolved from the owner's Google Maps link (https://maps.app.goo.gl/6eXgHo3tW4x21h3q8), which redirects to the place pin for Mlynské nivy 48.
 - The site does not publish client counts, headcount, or assessment volume.
@@ -53,7 +53,7 @@ The website is available in English, Slovak, German, and French. Add ?lang=en, ?
 - [SIEM and Audit Logging](https://redpatronus.com/services/siem): SIEM and audit logging from Red Patronus: real-time security event monitoring, log analysis, authentication monitoring, and incident response support.
 - [About](https://redpatronus.com/about): About Red Patronus (Redpatronus s.r.o.), a Bratislava cybersecurity firm founded in 2005. Client counts and team size are not published.
 - [Case Studies](https://redpatronus.com/case-studies): Three Red Patronus case studies: an insurance cloud move, a healthcare HIPAA programme, and a SaaS security hardening. Client names are not printed in the titles.
-- [Contact](https://redpatronus.com/contact): Contact Red Patronus at info@redpatronus.com or +421 948 446 778. Office: Mlynské nivy 48, 821 09 Bratislava. Reply within 24 hours.
+- [Contact](https://redpatronus.com/contact): Contact Red Patronus at info@redpatronus.com or +41 43 588 07 94. Office: Mlynské nivy 48, 821 09 Bratislava. Reply within 24 hours.
 - [Careers](https://redpatronus.com/hiring): Red Patronus is hiring a Junior Security / Infrastructure Engineer in Bratislava. Slovak listing: 1,800 EUR/month gross, full-time contractor, open to graduates.
 
 ## Case study figures already on /case-studies

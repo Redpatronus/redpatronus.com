@@ -135,7 +135,7 @@ export const pages = [
         },
         {
           q: "How can I contact Red Patronus?",
-          a: "Email info@redpatronus.com or call +421 948 446 778. The office is Mlynské nivy 48, 821 09 Bratislava, Slovakia. The contact page says the team responds within 24 hours.",
+          a: "Email info@redpatronus.com or call +41 43 588 07 94. The office is Mlynské nivy 48, 821 09 Bratislava, Slovakia. The contact page says the team responds within 24 hours.",
         },
         {
           q: "Which standards does the Red Patronus homepage list?",
@@ -153,7 +153,7 @@ export const pages = [
         },
         {
           q: "Ako kontaktovať Red Patronus?",
-          a: "Napíšte na info@redpatronus.com alebo volajte +421 948 446 778. Sídlo je Mlynské nivy 48, 821 09 Bratislava, Slovensko. Tím odpovedá do 24 hodín.",
+          a: "Napíšte na info@redpatronus.com alebo volajte +41 43 588 07 94. Sídlo je Mlynské nivy 48, 821 09 Bratislava, Slovensko. Tím odpovedá do 24 hodín.",
         },
         {
           q: "Aké štandardy uvádza domovská stránka Red Patronus?",
@@ -171,7 +171,7 @@ export const pages = [
         },
         {
           q: "Wie erreiche ich Red Patronus?",
-          a: "E-Mail an info@redpatronus.com oder Anruf unter +421 948 446 778. Das Büro ist Mlynské nivy 48, 821 09 Bratislava, Slowakei. Die Kontaktseite nennt eine Antwort innerhalb von 24 Stunden.",
+          a: "E-Mail an info@redpatronus.com oder Anruf unter +41 43 588 07 94. Das Büro ist Mlynské nivy 48, 821 09 Bratislava, Slowakei. Die Kontaktseite nennt eine Antwort innerhalb von 24 Stunden.",
         },
         {
           q: "Welche Standards nennt die Startseite von Red Patronus?",
@@ -189,7 +189,7 @@ export const pages = [
         },
         {
           q: "Comment contacter Red Patronus ?",
-          a: "Écrivez à info@redpatronus.com ou appelez le +421 948 446 778. Le bureau est Mlynské nivy 48, 821 09 Bratislava, Slovaquie. La page contact indique une réponse sous 24 heures.",
+          a: "Écrivez à info@redpatronus.com ou appelez le +41 43 588 07 94. Le bureau est Mlynské nivy 48, 821 09 Bratislava, Slovaquie. La page contact indique une réponse sous 24 heures.",
         },
         {
           q: "Quelles normes la page d'accueil de Red Patronus cite-t-elle ?",
@@ -1225,17 +1225,17 @@ export const pages = [
       "Contacter Red Patronus | Bratislava",
     ),
     description: L(
-      "Contact Red Patronus at info@redpatronus.com or +421 948 446 778. Office: Mlynské nivy 48, 821 09 Bratislava. Reply within 24 hours.",
-      "Kontaktujte Red Patronus na info@redpatronus.com alebo +421 948 446 778. Sídlo: Mlynské nivy 48, 821 09 Bratislava. Odpoveď do 24 hodín.",
-      "Kontakt zu Red Patronus: info@redpatronus.com oder +421 948 446 778. Büro: Mlynské nivy 48, 821 09 Bratislava. Antwort innerhalb von 24 Stunden.",
-      "Contactez Red Patronus : info@redpatronus.com ou +421 948 446 778. Bureau : Mlynské nivy 48, 821 09 Bratislava. Réponse sous 24 heures.",
+      "Contact Red Patronus at info@redpatronus.com or +41 43 588 07 94. Office: Mlynské nivy 48, 821 09 Bratislava. Reply within 24 hours.",
+      "Kontaktujte Red Patronus na info@redpatronus.com alebo +41 43 588 07 94. Sídlo: Mlynské nivy 48, 821 09 Bratislava. Odpoveď do 24 hodín.",
+      "Kontakt zu Red Patronus: info@redpatronus.com oder +41 43 588 07 94. Büro: Mlynské nivy 48, 821 09 Bratislava. Antwort innerhalb von 24 Stunden.",
+      "Contactez Red Patronus : info@redpatronus.com ou +41 43 588 07 94. Bureau : Mlynské nivy 48, 821 09 Bratislava. Réponse sous 24 heures.",
     ),
     keywords: L("contact Red Patronus, info@redpatronus.com, Bratislava cybersecurity, penetration test quote"),
     summary: L(
-      "Contact Red Patronus, legally Redpatronus s.r.o., by email at info@redpatronus.com or by phone at +421 948 446 778. The office is at Mlynské nivy 48, 821 09 Bratislava, Slovakia. The contact page says the team responds within 24 hours.",
-      "Red Patronus, právne Redpatronus s.r.o., kontaktujte e-mailom info@redpatronus.com alebo telefónom +421 948 446 778. Sídlo je Mlynské nivy 48, 821 09 Bratislava, Slovensko. Kontaktná stránka hovorí, že tím odpovie do 24 hodín.",
-      "Kontaktieren Sie Red Patronus, rechtlich Redpatronus s.r.o., per E-Mail unter info@redpatronus.com oder telefonisch unter +421 948 446 778. Das Büro ist Mlynské nivy 48, 821 09 Bratislava, Slowakei. Die Kontaktseite sagt, das Team antworte innerhalb von 24 Stunden.",
-      "Contactez Red Patronus, juridiquement Redpatronus s.r.o., par e-mail à info@redpatronus.com ou par téléphone au +421 948 446 778. Le bureau est Mlynské nivy 48, 821 09 Bratislava, Slovaquie. La page contact indique une réponse sous 24 heures.",
+      "Contact Red Patronus, legally Redpatronus s.r.o., by email at info@redpatronus.com or by phone at +41 43 588 07 94. The office is at Mlynské nivy 48, 821 09 Bratislava, Slovakia. The contact page says the team responds within 24 hours.",
+      "Red Patronus, právne Redpatronus s.r.o., kontaktujte e-mailom info@redpatronus.com alebo telefónom +41 43 588 07 94. Sídlo je Mlynské nivy 48, 821 09 Bratislava, Slovensko. Kontaktná stránka hovorí, že tím odpovie do 24 hodín.",
+      "Kontaktieren Sie Red Patronus, rechtlich Redpatronus s.r.o., per E-Mail unter info@redpatronus.com oder telefonisch unter +41 43 588 07 94. Das Büro ist Mlynské nivy 48, 821 09 Bratislava, Slowakei. Die Kontaktseite sagt, das Team antworte innerhalb von 24 Stunden.",
+      "Contactez Red Patronus, juridiquement Redpatronus s.r.o., par e-mail à info@redpatronus.com ou par téléphone au +41 43 588 07 94. Le bureau est Mlynské nivy 48, 821 09 Bratislava, Slovaquie. La page contact indique une réponse sous 24 heures.",
     ),
     tables: [
       {
@@ -1255,7 +1255,7 @@ export const pages = [
           { cells: [L("Tax ID (DIČ)", "DIČ", "Steuer-ID (DIČ)", "Identifiant fiscal (DIČ)"), "2022108022"] },
           { cells: [L("VAT ID", "IČ DPH", "USt-IdNr.", "N° TVA"), "SK2022108022"] },
           { cells: [L("Email", "E-mail", "E-Mail", "E-mail"), "info@redpatronus.com"] },
-          { cells: [L("Phone", "Telefón", "Telefon", "Téléphone"), "+421 948 446 778"] },
+          { cells: [L("Phone", "Telefón", "Telefon", "Téléphone"), "+41 43 588 07 94"] },
           {
             cells: [
               L("Office", "Sídlo", "Büro", "Bureau"),
@@ -1275,7 +1275,7 @@ export const pages = [
       en: [
         {
           q: "How do I request a consultation from Red Patronus?",
-          a: "Use the contact form on this page, email info@redpatronus.com, or call +421 948 446 778. The form asks for name, company, business email, an optional phone number, and a message of at least 10 characters.",
+          a: "Use the contact form on this page, email info@redpatronus.com, or call +41 43 588 07 94. The form asks for name, company, business email, an optional phone number, and a message of at least 10 characters.",
         },
         {
           q: "How quickly does Red Patronus say it replies?",
@@ -1289,7 +1289,7 @@ export const pages = [
       sk: [
         {
           q: "Ako si vyžiadať konzultáciu od Red Patronus?",
-          a: "Použite kontaktný formulár na tejto stránke, napíšte na info@redpatronus.com alebo volajte +421 948 446 778. Formulár pýta meno, firmu, firemný e-mail, voliteľný telefón a správu aspoň s 10 znakmi.",
+          a: "Použite kontaktný formulár na tejto stránke, napíšte na info@redpatronus.com alebo volajte +41 43 588 07 94. Formulár pýta meno, firmu, firemný e-mail, voliteľný telefón a správu aspoň s 10 znakmi.",
         },
         {
           q: "Ako rýchlo Red Patronus podľa webu odpovedá?",
@@ -1303,7 +1303,7 @@ export const pages = [
       de: [
         {
           q: "Wie fordere ich eine Beratung bei Red Patronus an?",
-          a: "Nutzen Sie das Formular auf dieser Seite, schreiben Sie an info@redpatronus.com oder rufen Sie +421 948 446 778 an. Das Formular verlangt Name, Firma, geschäftliche E-Mail, optional eine Telefonnummer und eine Nachricht mit mindestens 10 Zeichen.",
+          a: "Nutzen Sie das Formular auf dieser Seite, schreiben Sie an info@redpatronus.com oder rufen Sie +41 43 588 07 94 an. Das Formular verlangt Name, Firma, geschäftliche E-Mail, optional eine Telefonnummer und eine Nachricht mit mindestens 10 Zeichen.",
         },
         {
           q: "Wie schnell antwortet Red Patronus nach eigener Angabe?",
@@ -1317,7 +1317,7 @@ export const pages = [
       fr: [
         {
           q: "Comment demander une consultation à Red Patronus ?",
-          a: "Utilisez le formulaire de cette page, écrivez à info@redpatronus.com ou appelez le +421 948 446 778. Le formulaire demande le nom, la société, un e-mail professionnel, un téléphone facultatif et un message d'au moins 10 caractères.",
+          a: "Utilisez le formulaire de cette page, écrivez à info@redpatronus.com ou appelez le +41 43 588 07 94. Le formulaire demande le nom, la société, un e-mail professionnel, un téléphone facultatif et un message d'au moins 10 caractères.",
         },
         {
           q: "Sous quel délai Red Patronus indique-t-il répondre ?",
