@@ -6,80 +6,105 @@ import { useLanguage, type Language } from "@/contexts/LanguageContext";
 const EMAIL = "info@redpatronus.com";
 
 type Copy = {
-  eyebrow: string; title: string; price: string; priceNote: string; offerNote: string;
+  eyebrow: string; title: string; oldPrice: string; price: string; priceNote: string; offerNote: string;
   bonusLabel: string; bonus: string; detailsTitle: string; details: string[];
+  optionsTitle: string; options: { price: string; label: string }[];
   cta: string; orEmail: string;
 };
 
 const copy: Record<Language, Copy> = {
   en: {
-    eyebrow: "Limited-time special offer",
-    title: "Professional penetration test",
-    price: "€3,000",
-    priceNote: "excl. VAT, not standard pricing",
-    offerNote: "No end date is published.",
+    eyebrow: "Black Friday special deal",
+    title: "Automated penetration test",
+    oldPrice: "€3,000", price: "€1,000",
+    priceNote: "excl. VAT",
+    offerNote: "Valid for orders placed by 12 December 2026.",
     bonusLabel: "Zero-findings guarantee",
     bonus: "If we find no vulnerability, next year's pentest is on us — free of charge.",
     detailsTitle: "What's included",
     details: [
+      "Automated, unauthenticated security test",
       "Web application or external infrastructure scope",
       "Security testing aligned with OWASP Top 10 and PTES",
       "Executive summary and technical report with PoC",
       "Risk-prioritized remediation guidance",
     ],
+    optionsTitle: "Optional add-ons",
+    options: [
+      { price: "+€1,000", label: "Delivery within 24 hours (invoiced immediately)" },
+      { price: "+€1,000", label: "Authenticated testing" },
+    ],
     cta: "Book your pentest",
     orEmail: "or write to us directly",
   },
   sk: {
-    eyebrow: "Časovo obmedzená špeciálna ponuka",
-    title: "Profesionálny penetračný test",
-    price: "3 000 €",
-    priceNote: "bez DPH, nie bežná cena",
-    offerNote: "Dátum konca nie je uverejnený.",
+    eyebrow: "Black Friday špeciálna ponuka",
+    title: "Automatizovaný penetračný test",
+    oldPrice: "3 000 €", price: "1 000 €",
+    priceNote: "bez DPH",
+    offerNote: "Platí pre objednávky do 12. 12. 2026.",
     bonusLabel: "Garancia nulových nálezov",
     bonus: "Ak nenájdeme žiadnu zraniteľnosť, pentest v budúcom roku dostanete zdarma.",
     detailsTitle: "Čo test obsahuje",
     details: [
+      "Automatizovaný, neautentifikovaný bezpečnostný test",
       "Rozsah: webová aplikácia alebo externá infraštruktúra",
-      "Manuálne testovanie podľa OWASP Top 10 a PTES",
+      "Testovanie podľa OWASP Top 10 a PTES",
       "Manažérske zhrnutie a technická správa s PoC",
       "Odporúčania na nápravu zoradené podľa rizika",
+    ],
+    optionsTitle: "Voliteľné doplnky",
+    options: [
+      { price: "+1 000 €", label: "Dodanie do 24 hodín (fakturácia ihneď)" },
+      { price: "+1 000 €", label: "Autentifikované testovanie" },
     ],
     cta: "Objednať pentest",
     orEmail: "alebo nám napíšte priamo",
   },
   de: {
-    eyebrow: "Befristetes Sonderangebot",
-    title: "Professioneller Penetrationstest",
-    price: "3.000 €",
-    priceNote: "zzgl. MwSt., kein Standardpreis",
-    offerNote: "Kein Enddatum veröffentlicht.",
+    eyebrow: "Black-Friday-Sonderangebot",
+    title: "Automatisierter Penetrationstest",
+    oldPrice: "3.000 €", price: "1.000 €",
+    priceNote: "zzgl. MwSt.",
+    offerNote: "Gültig für Bestellungen bis 12.12.2026.",
     bonusLabel: "Null-Befund-Garantie",
     bonus: "Finden wir keine Schwachstelle, erhalten Sie den Pentest im nächsten Jahr kostenlos.",
     detailsTitle: "Leistungsumfang",
     details: [
+      "Automatisierter, nicht authentifizierter Sicherheitstest",
       "Umfang: Webanwendung oder externe Infrastruktur",
-      "Manuelle Tests nach OWASP Top 10 und PTES",
+      "Tests nach OWASP Top 10 und PTES",
       "Management-Summary und technischer Bericht mit PoC",
       "Risikopriorisierte Empfehlungen zur Behebung",
+    ],
+    optionsTitle: "Optionale Erweiterungen",
+    options: [
+      { price: "+1.000 €", label: "Lieferung innerhalb von 24 Stunden (sofortige Rechnung)" },
+      { price: "+1.000 €", label: "Authentifizierte Tests" },
     ],
     cta: "Pentest anfragen",
     orEmail: "oder schreiben Sie uns direkt",
   },
   fr: {
-    eyebrow: "Offre spéciale à durée limitée",
-    title: "Test d'intrusion professionnel",
-    price: "3 000 €",
-    priceNote: "HT, pas le tarif habituel",
-    offerNote: "Aucune date de fin publiée.",
+    eyebrow: "Offre spéciale Black Friday",
+    title: "Test d'intrusion automatisé",
+    oldPrice: "3 000 €", price: "1 000 €",
+    priceNote: "HT",
+    offerNote: "Valable pour toute commande avant le 12/12/2026.",
     bonusLabel: "Garantie zéro vulnérabilité",
     bonus: "Si nous ne trouvons aucune vulnérabilité, le pentest de l'année prochaine est offert.",
     detailsTitle: "Ce qui est inclus",
     details: [
+      "Test de sécurité automatisé, non authentifié",
       "Périmètre : application web ou infrastructure externe",
-      "Tests manuels selon OWASP Top 10 et PTES",
+      "Tests selon OWASP Top 10 et PTES",
       "Synthèse dirigeants et rapport technique avec PoC",
       "Recommandations de remédiation priorisées",
+    ],
+    optionsTitle: "Options supplémentaires",
+    options: [
+      { price: "+1 000 €", label: "Livraison sous 24 heures (facturation immédiate)" },
+      { price: "+1 000 €", label: "Tests authentifiés" },
     ],
     cta: "Réserver un pentest",
     orEmail: "ou écrivez-nous directement",
@@ -115,7 +140,10 @@ const OfferBanner = () => {
               <h2 className="font-display text-3xl lg:text-4xl font-bold mt-5 leading-tight">
                 {c.title}
               </h2>
-              <div className="mt-5 flex items-end gap-3">
+              <div className="mt-5 flex flex-wrap items-end gap-3">
+                <span className="mb-2 font-display text-2xl lg:text-3xl font-semibold text-background/50 line-through">
+                  {c.oldPrice}
+                </span>
                 <span className="font-display text-6xl lg:text-7xl font-extrabold tracking-tight">
                   {c.price}
                 </span>
@@ -141,7 +169,7 @@ const OfferBanner = () => {
                   </Link>
                 </Button>
                 <a
-                  href={`mailto:${EMAIL}?subject=Pentest%203000%20EUR`}
+                  href={`mailto:${EMAIL}?subject=Black%20Friday%20Pentest%201000%20EUR`}
                   className="inline-flex items-center gap-2 font-body text-sm text-background/80 hover:text-background transition-colors"
                 >
                   <Mail className="h-4 w-4" />
@@ -160,6 +188,15 @@ const OfferBanner = () => {
                       <Check className="h-3 w-3 text-primary-foreground" strokeWidth={3} />
                     </span>
                     <span className="font-body text-sm lg:text-base text-background/90">{d}</span>
+                  </li>
+                ))}
+              </ul>
+              <h3 className="font-display text-lg font-semibold mt-8 mb-4">{c.optionsTitle}</h3>
+              <ul className="space-y-3">
+                {c.options.map((o) => (
+                  <li key={o.label} className="flex items-start gap-3 rounded-sm border border-background/15 bg-background/5 px-3 py-2.5">
+                    <span className="shrink-0 font-display text-sm font-bold">{o.price}</span>
+                    <span className="font-body text-sm text-background/90">{o.label}</span>
                   </li>
                 ))}
               </ul>
