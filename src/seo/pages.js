@@ -783,10 +783,6 @@ export const pages = [
           q: "What does the interview assignment involve?",
           a: "Build a simple Azure lab with a VM or cluster, a firewall, and logging, plus short documentation. At the interview you present a one-page analysis, a log-collection demo, and simple threat hunting, for example DVWA logs shipped to Graylog, Wazuh, or Sentinel.",
         },
-        {
-          q: "What does the role pay?",
-          a: "1,800 EUR per month gross, as full-time contractor work (živnosť).",
-        },
       ],
       sk: [
         {
@@ -796,10 +792,6 @@ export const pages = [
         {
           q: "Čo obsahuje zadanie na pohovor?",
           a: "Postaviť jednoduché lab prostredie v Azure s VM alebo clusterom, firewallom a logovaním a napísať krátku dokumentáciu. Na pohovore predstavíte jednostranovú analýzu, ukážku zberu logov a jednoduchý threat hunting, napríklad DVWA a logy v Graylogu, Wazuhu alebo Sentineli.",
-        },
-        {
-          q: "Aká je odmena?",
-          a: "1 800 EUR mesačne brutto, plný úväzok na živnosť.",
         },
       ],
     },
