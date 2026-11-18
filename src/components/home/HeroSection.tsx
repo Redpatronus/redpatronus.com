@@ -22,7 +22,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-4xl mx-auto text-center animate-fade-in flex flex-col items-center">
           <span className="font-body text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-4">
-            Enterprise Security Partner
+            Enterprise security partner
           </span>
 
           <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-[1.1] tracking-tight mb-5 whitespace-pre-line">

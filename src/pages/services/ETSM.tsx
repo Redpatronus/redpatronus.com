@@ -9,28 +9,28 @@ import { Radar, ArrowRight, CheckCircle, Globe, Search, AlertTriangle } from "lu
 
 const features = [
   {
-    title: "Comprehensive Data Analysis",
-    description: "We gather and scrutinize public information from social media, forums, public databases, and more to understand what sensitive details are accessible to cyber adversaries.",
+    title: "Public data analysis",
+    description: "We collect and review public information from social media, forums and public databases to see which sensitive details an attacker can reach.",
   },
   {
-    title: "Proactive Threat Detection",
-    description: "Our system continuously monitors public services for signs of emerging threats, enabling rapid response to any potential security breaches.",
+    title: "Early threat detection",
+    description: "We monitor your public services continuously for signs of new threats, so you can respond quickly to a possible breach.",
   },
   {
-    title: "Actionable Insights",
-    description: "By analyzing the information attackers could use against you, we identify key focus areas for improving your security posture.",
+    title: "Actionable findings",
+    description: "We analyze what attackers could use against you and tell you where to focus first.",
   },
   {
-    title: "Enhanced Situational Awareness",
-    description: "Unlock valuable insights and stay informed with real-time monitoring, ensuring you know exactly what potential attackers already know.",
+    title: "Situational awareness",
+    description: "Real-time monitoring shows you what potential attackers already know about you.",
   },
   {
-    title: "OSINT Tools Integration",
-    description: "Leveraging Censys, Shodan, ProjectDiscovery, SSLabs, and our own fuzzing tools for comprehensive threat intelligence.",
+    title: "OSINT tooling",
+    description: "We use Censys, Shodan, ProjectDiscovery, SSLabs and our own fuzzing tools.",
   },
   {
-    title: "Automated Surveillance",
-    description: "Continuous, automated surveillance of publicly available data to stay one step ahead of potential threats.",
+    title: "Automated surveillance",
+    description: "Continuous, automated surveillance of publicly available data.",
   },
 ];
 
@@ -47,14 +47,14 @@ const ETSM = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <Radar className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">
-                  Threat Monitoring
+                  Threat monitoring
                 </span>
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-                External Threat & Security Monitoring
+                External threat and security monitoring
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-                Our External Threat & Security Monitoring service harnesses the power of OSINT to provide continuous, automated surveillance of publicly available data, ensuring your organization stays one step ahead of potential threats.
+                Our External Threat & Security Monitoring service uses OSINT to watch publicly available data about your organization continuously and automatically, so you see exposures before attackers use them.
               </p>
               <AnswerSummary path="/services/etsm" />
             </div>
@@ -90,14 +90,14 @@ const ETSM = () => {
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Know What Your Adversaries Know
+              Know what your adversaries know
             </h2>
             <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              Get comprehensive visibility into your external threat landscape with our monitoring suite.
+              See what your organization exposes to the internet and what attackers can learn from it.
             </p>
             <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90 transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <Link to="/contact">
-                Start Monitoring
+                Start monitoring
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

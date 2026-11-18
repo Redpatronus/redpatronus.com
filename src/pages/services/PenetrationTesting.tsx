@@ -10,28 +10,28 @@ import { ArrowRight, Target, CheckCircle, Shield, Network, Smartphone, Globe } f
 const capabilities = [
   {
     icon: Globe,
-    title: "Web Application Testing",
-    description: "Comprehensive assessment of web applications including OWASP Top 10, business logic flaws, and authentication vulnerabilities.",
+    title: "Web application testing",
+    description: "Web application testing covering the OWASP Top 10, business logic flaws and authentication vulnerabilities.",
   },
   {
     icon: Network,
-    title: "Network Penetration Testing",
-    description: "Internal and external network assessments identifying vulnerabilities in infrastructure, services, and configurations.",
+    title: "Network penetration testing",
+    description: "Internal and external network tests that find vulnerabilities in infrastructure, services and configuration.",
   },
   {
     icon: Smartphone,
-    title: "Mobile Application Testing",
+    title: "Mobile application testing",
     description: "Security testing for iOS and Android applications, including API analysis and data storage assessment.",
   },
   {
     icon: Shield,
-    title: "API Security Testing",
-    description: "In-depth assessment of REST, GraphQL, and SOAP APIs for authentication, authorization, and injection vulnerabilities.",
+    title: "API security testing",
+    description: "REST, GraphQL and SOAP APIs tested for authentication, authorization and injection vulnerabilities.",
   },
 ];
 
 const methodology = [
-  { phase: "1. Reconnaissance", description: "Comprehensive information gathering and attack surface mapping" },
+  { phase: "1. Reconnaissance", description: "Information gathering and attack surface mapping" },
   { phase: "2. Enumeration", description: "Detailed service and vulnerability identification" },
   { phase: "3. Exploitation", description: "Controlled exploitation to validate vulnerabilities" },
   { phase: "4. Post-Exploitation", description: "Assessment of potential lateral movement and impact" },
@@ -51,25 +51,25 @@ const PenetrationTesting = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <Target className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">
-                  Offensive Security
+                  Offensive security
                 </span>
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-                Penetration Testing Services
+                Penetration testing services
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
-                Identify and validate security vulnerabilities in your applications, networks, and infrastructure with comprehensive penetration testing that simulates real-world attack scenarios.
+                We find and confirm vulnerabilities in your applications, networks and infrastructure by testing them the way a real attacker would.
               </p>
               <AnswerSummary path="/services/penetration-testing" />
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>
                   <Link to="/contact">
-                    Request Assessment
+                    Request an assessment
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link to="/services">View All Services</Link>
+                  <Link to="/services">View all services</Link>
                 </Button>
               </div>
             </div>
@@ -81,10 +81,10 @@ const PenetrationTesting = () => {
           <div className="container mx-auto px-4 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
               <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                Testing Capabilities
+                Testing capabilities
               </h2>
               <p className="font-body text-lg text-muted-foreground">
-                Comprehensive security testing across your entire attack surface.
+                What we test across your attack surface.
               </p>
             </div>
 
@@ -112,10 +112,10 @@ const PenetrationTesting = () => {
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div>
                 <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                  Our Methodology
+                  Our methodology
                 </h2>
                 <p className="font-body text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Our penetration testing methodology follows industry best practices and is designed to thoroughly identify vulnerabilities while minimizing operational impact.
+                  Our methodology follows established industry practice. We test thoroughly and keep the impact on your operations low.
                 </p>
                 <div className="space-y-4">
                   {methodology.map((item, index) => (
@@ -133,7 +133,7 @@ const PenetrationTesting = () => {
               </div>
               <div className="bg-card rounded-2xl p-8 lg:p-10 shadow-card border border-border">
                 <h3 className="font-display text-xl font-semibold text-foreground mb-6">
-                  What You'll Receive
+                  What you'll receive
                 </h3>
                 <ul className="space-y-4">
                   {[
@@ -160,14 +160,14 @@ const PenetrationTesting = () => {
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Ready to Test Your Defenses?
+              Ready to test your defenses?
             </h2>
             <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              Contact us to discuss your penetration testing needs and receive a customized proposal.
+              Tell us what you want tested and we will send you a proposal.
             </p>
             <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90">
               <Link to="/contact">
-                Get Started
+                Get started
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

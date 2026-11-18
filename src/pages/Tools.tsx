@@ -13,7 +13,7 @@ const reasons = [
     icon: ShieldCheck,
     title: "A safer environment for everyone",
     description:
-      "Most incidents we investigate start with something small and preventable. Sharing simple checks helps teams catch those issues early — even the ones who will never be our clients.",
+      "Most incidents we investigate start with something small and preventable. Sharing simple checks helps teams catch those issues early, including teams that will never be our clients.",
   },
   {
     icon: Users,
@@ -34,15 +34,15 @@ const Tools = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
               <Wrench className="h-4 w-4 text-primary" />
               <span className="font-body text-sm font-medium text-accent-foreground">
-                Community Tools
+                Community tools
               </span>
             </div>
             <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6">
               Tools we build and share
             </h1>
             <p className="font-body text-lg text-muted-foreground">
-              Small, focused utilities from our engineers — free to use, easy to run, and made to solve
-              the problems we keep seeing in real environments.
+              Small utilities from our engineers. They are free, easy to run and built for problems we keep
+              seeing in real environments.
             </p>
             <AnswerSummary path="/tools" align="center" />
           </div>

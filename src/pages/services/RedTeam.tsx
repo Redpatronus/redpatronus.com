@@ -10,33 +10,33 @@ import { ArrowRight, Shield, CheckCircle, Eye, Users, Lock, AlertTriangle } from
 const capabilities = [
   {
     icon: Eye,
-    title: "Full Adversary Simulation",
+    title: "Full adversary simulation",
     description: "Realistic attack campaigns mimicking nation-state and advanced persistent threat (APT) tactics, techniques, and procedures.",
   },
   {
     icon: Lock,
-    title: "Physical Security Testing",
-    description: "Assessment of physical security controls including access controls, surveillance systems, and social engineering resistance.",
+    title: "Physical security testing",
+    description: "We test physical access controls, surveillance systems and how staff respond to social engineering.",
   },
   {
     icon: AlertTriangle,
-    title: "Detection & Response Testing",
-    description: "Evaluate your security team's ability to detect and respond to sophisticated attacks in real-time.",
+    title: "Detection and response testing",
+    description: "We check whether your security team detects and responds to advanced attacks in real time.",
   },
   {
     icon: Users,
-    title: "Purple Team Exercises",
-    description: "Collaborative exercises where our red team works alongside your blue team to improve detection capabilities.",
+    title: "Purple team exercises",
+    description: "Our red team works alongside your blue team to improve detection.",
   },
 ];
 
 const scenarios = [
-  "Initial Access via Phishing & Social Engineering",
-  "Assumed Breach Scenarios",
-  "Lateral Movement & Privilege Escalation",
-  "Data Exfiltration Simulation",
-  "Ransomware Attack Simulation",
-  "Supply Chain Attack Vectors",
+  "Initial access via phishing and social engineering",
+  "Assumed breach scenarios",
+  "Lateral movement and privilege escalation",
+  "Data exfiltration simulation",
+  "Ransomware attack simulation",
+  "Supply chain attack vectors",
 ];
 
 const RedTeam = () => {
@@ -52,25 +52,25 @@ const RedTeam = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <Shield className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">
-                  Adversary Simulation
+                  Adversary simulation
                 </span>
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-                Red Team Operations
+                Red team operations
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
-                Put your security controls and team to the ultimate test with realistic adversary simulations that mirror the tactics of sophisticated threat actors.
+                Realistic adversary simulations that use the tactics of advanced threat actors to test your security controls and your team.
               </p>
               <AnswerSummary path="/services/red-team" />
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>
                   <Link to="/contact">
-                    Plan Your Engagement
+                    Plan your engagement
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link to="/services">View All Services</Link>
+                  <Link to="/services">View all services</Link>
                 </Button>
               </div>
             </div>
@@ -82,10 +82,10 @@ const RedTeam = () => {
           <div className="container mx-auto px-4 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
               <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                Red Team Capabilities
+                Red team capabilities
               </h2>
               <p className="font-body text-lg text-muted-foreground">
-                Comprehensive adversary simulation testing your entire security posture.
+                Adversary simulation across people, processes and technology.
               </p>
             </div>
 
@@ -113,10 +113,10 @@ const RedTeam = () => {
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div>
                 <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                  Attack Scenarios
+                  Attack scenarios
                 </h2>
                 <p className="font-body text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Our red team engagements are customized to test the specific threats most relevant to your organization and industry.
+                  We build each engagement around the threats most relevant to your organization and industry.
                 </p>
                 <div className="space-y-3">
                   {scenarios.map((scenario, index) => (
@@ -129,7 +129,7 @@ const RedTeam = () => {
               </div>
               <div className="bg-primary rounded-2xl p-8 lg:p-10 text-primary-foreground">
                 <h3 className="font-display text-xl font-semibold mb-6">
-                  Why Red Team Testing?
+                  Why red team testing?
                 </h3>
                 <ul className="space-y-4">
                   {[
@@ -137,7 +137,7 @@ const RedTeam = () => {
                     "Test incident detection and response",
                     "Identify gaps in security awareness",
                     "Meet compliance and regulatory requirements",
-                    "Build organizational resilience",
+                    "Find out how well your organization recovers",
                     "Prioritize security improvements",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
@@ -156,14 +156,14 @@ const RedTeam = () => {
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Test Your Security Team
+              Test your security team
             </h2>
             <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              Discover how your organization would respond to a real attack with our red team operations.
+              Find out how your organization would respond to a real attack.
             </p>
             <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90">
               <Link to="/contact">
-                Schedule Engagement
+                Schedule an engagement
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

@@ -9,28 +9,28 @@ import { Fish, ArrowRight, CheckCircle, Mail, AlertTriangle, Users } from "lucid
 
 const features = [
   {
-    title: "Enhanced Threat Awareness",
-    description: "Phishing tests help employees identify deceptive tactics, enabling them to better distinguish between legitimate communications and potential threats.",
+    title: "Better threat awareness",
+    description: "Phishing tests teach employees to spot deceptive tactics and tell legitimate messages from malicious ones.",
   },
   {
-    title: "Reinforce Best Practices",
-    description: "By experiencing simulated attacks, employees gain firsthand insight into effective security behaviors.",
+    title: "Learning by experience",
+    description: "Employees who go through a simulated attack remember what to do when a real one arrives.",
   },
   {
-    title: "Reduce Risk of Breaches",
-    description: "Regular testing and feedback allow your organization to address vulnerabilities before they can be exploited.",
+    title: "Lower breach risk",
+    description: "Regular testing and feedback let you fix weak spots before someone exploits them.",
   },
   {
-    title: "Promote Security-First Culture",
-    description: "Continuous engagement through realistic scenarios fosters a proactive security mindset across your organization.",
+    title: "Security as a habit",
+    description: "Realistic scenarios, repeated over time, make reporting a suspicious email a normal habit.",
   },
   {
-    title: "Compliance Support",
+    title: "Compliance support",
     description: "Regular assessments support compliance with industry standards and regulatory requirements.",
   },
   {
-    title: "Detailed Reporting",
-    description: "Comprehensive reports showing click rates, reporting rates, and areas for improvement.",
+    title: "Detailed reporting",
+    description: "Reports with click rates, reporting rates and what to improve.",
   },
 ];
 
@@ -47,14 +47,14 @@ const Phishing = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <Fish className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">
-                  Phishing Simulation
+                  Phishing simulation
                 </span>
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-                Phishing Simulation Services
+                Phishing simulation services
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-                Our Phishing Simulation Services are designed to empower your organization by proactively testing and reinforcing your employees' ability to recognize and respond to phishing threats.
+                We send realistic phishing emails to your employees to test and train how they recognize and report phishing.
               </p>
               <AnswerSummary path="/services/phishing" />
             </div>
@@ -90,14 +90,14 @@ const Phishing = () => {
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Test Your Team's Awareness
+              Test your team's awareness
             </h2>
             <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              Regular phishing simulations are a critical component of a robust cybersecurity strategy.
+              Run regular simulations and track how your team improves over time.
             </p>
             <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90 transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <Link to="/contact">
-                Start Simulation
+                Start a simulation
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

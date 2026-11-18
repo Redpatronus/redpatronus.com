@@ -9,28 +9,28 @@ import { Activity, ArrowRight, CheckCircle, FileText, Eye, AlertTriangle } from 
 
 const features = [
   {
-    title: "Immediate Threat Identification",
-    description: "Detect security issues the moment they arise with real-time monitoring and alerting.",
+    title: "Immediate threat identification",
+    description: "Real-time monitoring and alerting flag security issues as they happen.",
   },
   {
-    title: "Comprehensive Log Analysis",
-    description: "Gain in-depth insights through meticulous analysis of security events and system logs.",
+    title: "Log analysis",
+    description: "Detailed analysis of security events and system logs.",
   },
   {
-    title: "Swift Incident Response",
-    description: "Minimize potential damage with quick response capabilities and automated remediation.",
+    title: "Fast incident response",
+    description: "Quick response and automated remediation limit the damage.",
   },
   {
-    title: "Authentication Monitoring",
-    description: "Keep a vigilant eye on all login attempts and authentication events across your systems.",
+    title: "Authentication monitoring",
+    description: "We watch login attempts and authentication events across your systems.",
   },
   {
-    title: "Audit Log Management",
-    description: "Complete tracking and monitoring of system changes and user activities for compliance.",
+    title: "Audit log management",
+    description: "System changes and user activity are tracked and kept for compliance.",
   },
   {
-    title: "Security Event Correlation",
-    description: "Advanced correlation of security events to identify patterns and potential threats.",
+    title: "Security event correlation",
+    description: "Events are correlated to reveal patterns and possible threats.",
   },
 ];
 
@@ -47,14 +47,14 @@ const SIEM = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <Activity className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">
-                  SIEM Services
+                  SIEM services
                 </span>
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-                SIEM & Audit Logging
+                SIEM and audit logging
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-                In our SIEM project, we focus on the real-time monitoring of security events. This critical service enables us to identify threats, anomalies, and unauthorized activities as they occur, ensuring rapid detection and response.
+                Our SIEM service monitors security events in real time. We spot threats, anomalies and unauthorized activity as they occur and respond quickly.
               </p>
               <AnswerSummary path="/services/siem" />
             </div>
@@ -90,14 +90,14 @@ const SIEM = () => {
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Maintain Complete Visibility
+              See what happens in your systems
             </h2>
             <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              With our SIEM solution, rest assured that your business is continuously guarded against emerging threats.
+              We set up SIEM and audit logging so security events in your environment are monitored around the clock.
             </p>
             <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90 transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <Link to="/contact">
-                Implement SIEM
+                Set up SIEM
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

@@ -26,11 +26,11 @@ const ToolsSection = () => {
             </span>
           </div>
           <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mt-3 mb-4">
-            Free Tools From the Red Patronus Team
+            Free tools from the Red Patronus team
           </h2>
           <p className="font-body text-lg text-muted-foreground">
-            We build small, practical utilities and share them with the security community — because a
-            safer environment benefits everyone, and good work should be visible.
+            We build small, practical utilities and share them with the security community. A safer
+            internet helps everyone, and people can see how we work.
           </p>
         </div>
 

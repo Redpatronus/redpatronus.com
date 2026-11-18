@@ -4,39 +4,39 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const values = [
   {
     icon: Users,
-    title: "One Flight, One Team",
+    title: "One flight, one team",
     description:
-      "We fly as one team, not a hierarchy of rank. A title tells you what someone is responsible for — it doesn't make them worth more than anyone else.",
+      "We fly as one team, not a hierarchy of rank. A title tells you what someone is responsible for. It does not make them worth more than anyone else.",
   },
   {
     icon: Mountain,
-    title: "Eagle Vision, Equal Ground",
+    title: "Eagle vision, equal ground",
     description:
-      "We aim high and keep our feet on the ground. Same respect, same rules, and the same access to what people need to do great work — for everyone. Leadership earns its place through vision and accountability, not perks or special comfort.",
+      "We aim high and keep our feet on the ground. Everyone gets the same respect, the same rules and the same access to what they need to do good work. Leadership earns its place through vision and accountability, not perks or special comfort.",
   },
   {
     icon: Network,
-    title: "No One Flies Off With the Nest",
+    title: "No one flies off with the nest",
     description:
-      "What we build here belongs to the team: the knowledge, the relationships, the clients, the methods. None of it is private property to be carried off quietly and used against the people who helped create it. If you grow here, you give back — share what you know, respect others' work, and if you leave, leave the trust intact.",
+      "What we build here belongs to the team: the knowledge, the relationships, the clients, the methods. None of it is private property to be carried off quietly and used against the people who helped create it. If you grow here, you give back: share what you know, respect others' work, and if you leave, leave the trust intact.",
   },
   {
     icon: Shield,
-    title: "Guard the Nest",
+    title: "Guard the nest",
     description:
-      "A nest is kept safe by a thousand small habits, not one heroic moment. Every access rule, every deadline, every clean handover, every decision written down — that's how we keep each other safe. We guard the nest by respecting the details.",
+      "A nest is kept safe by a thousand small habits, not one heroic moment. Every access rule, every deadline, every clean handover, every decision written down. That is how we keep each other safe. We guard the nest by respecting the details.",
   },
   {
     icon: Wind,
-    title: "No Panic, No Drama",
+    title: "No panic, no drama",
     description:
-      "Storms happen. We don't panic. When something breaks, we name it, fix it, and move on — no pointing fingers, no big reactions over small things. Staying calm under pressure is a skill, and we practise it on purpose.",
+      "Storms happen. We don't panic. When something breaks, we name it, fix it and move on, without pointing fingers or overreacting to small things. Staying calm under pressure is a skill, and we practise it on purpose.",
   },
   {
     icon: Leaf,
-    title: "Protect the Sky We Share",
+    title: "Protect the sky we share",
     description:
-      "Security and sustainability go hand in hand. We take ESG seriously — making responsible choices for the environment, our people, and the communities we serve. We favour efficient infrastructure, ethical partnerships, and transparent governance, because protecting our clients also means protecting the world they operate in.",
+      "We take ESG seriously and try to make responsible choices for the environment, our people and the communities around us. In practice that means efficient infrastructure, ethical partnerships and transparent governance.",
   },
 ];
 
@@ -51,10 +51,10 @@ const ValuesSection = () => {
             {t("about.valuesLabel")}
           </span>
           <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mt-4 mb-6">
-            Principles That Guide Us
+            The principles we work by
           </h2>
           <p className="font-body text-muted-foreground italic">
-            The shared commitments that shape how we work, lead, and protect what we build together.
+            How we work together, lead and look after what we build.
           </p>
         </div>
 

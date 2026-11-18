@@ -49,7 +49,7 @@ export const SITE = {
 export const ORG_ID = `${SITE.url}/#organization`;
 export const WEBSITE_ID = `${SITE.url}/#website`;
 
-/** Placeholders the owner must replace with real data. Also written to llms.txt and HTML comments. */
+/** Internal placeholders the owner must replace with real data. Not written to llms.txt. */
 export const OWNER_TODOS = [
   {
     id: "og-image",
@@ -75,7 +75,6 @@ export const OWNER_TODOS = [
 
 export const UI = {
   breadcrumb: L("Breadcrumb", "Navigácia", "Brotkrumen", "Fil d'Ariane"),
-  keyFacts: L("Key facts", "Kľúčové fakty", "Wichtige Fakten", "Faits clés"),
   faq: L("Frequently asked questions", "Často kladené otázky", "Häufig gestellte Fragen", "Questions fréquentes"),
   related: L("Related pages", "Súvisiace stránky", "Verwandte Seiten", "Pages associées"),
   skip: L("Skip to content", "Preskočiť na obsah", "Zum Inhalt springen", "Aller au contenu"),
@@ -138,20 +137,22 @@ export function pentestOffer() {
   return {
     "@type": "Offer",
     "@id": `${SITE.url}/#pentest-offer`,
-    name: "Limited-time special offer: professional penetration test",
+    name: "Limited-time special offer: automated penetration test",
     description:
-      "Current limited-time special offer, not standard pricing. No end date is published. €3,000 excluding VAT for a web application or external infrastructure. Testing is aligned with OWASP Top 10 and PTES. Includes an executive summary, a technical report with proof of concept, and risk-prioritized remediation guidance. If no vulnerability is found, the next year's pentest is free of charge.",
+      "Black Friday offer: automated, unauthenticated penetration test of a web application or external infrastructure for €1,000 excluding VAT (regular price €3,000). Valid for orders placed by 12 December 2026. Testing follows OWASP Top 10 and PTES. Includes an executive summary, a technical report with proof of concept, and risk-prioritized remediation guidance. Add-ons: delivery within 24 hours (+€1,000) and authenticated testing (+€1,000). If we find no vulnerability, next year's pentest is free.",
     category: "Limited-time special offer",
-    price: "3000",
+    price: "1000",
     priceCurrency: "EUR",
+    priceValidUntil: "2026-12-12",
     url: `${SITE.url}/services/penetration-testing`,
     seller: { "@id": ORG_ID },
     priceSpecification: {
       "@type": "UnitPriceSpecification",
-      price: "3000",
+      price: "1000",
       priceCurrency: "EUR",
       valueAddedTaxIncluded: false,
-      description: "Limited-time special offer excluding VAT. Not standard pricing. No end date is published.",
+      validThrough: "2026-12-12",
+      description: "Black Friday price excluding VAT, valid for orders placed by 12 December 2026.",
     },
   };
 }
@@ -367,7 +368,6 @@ export function renderHead(path, lang = "en") {
   const links = hreflangLinks(head.page.path);
   const keywords = t(head.page.keywords, lang);
   const lines = [
-    `<!-- TODO(owner): placeholders are listed in ${SITE.url}/llms.txt under "Placeholders for the owner". -->`,
     `<title data-rh="true">${escapeHtml(head.title)}</title>`,
     `<meta data-rh="true" name="description" content="${escapeAttr(head.description)}" />`,
     `<link data-rh="true" rel="canonical" href="${head.url}" />`,
@@ -402,8 +402,9 @@ export function renderHead(path, lang = "en") {
   return lines.filter(Boolean).join("\n    ");
 }
 
+// Owner TODOs are internal notes; keep them out of public HTML.
 export function renderTodoComments() {
-  return OWNER_TODOS.map((todo) => `<!-- ${todo.text.replace(/-->/g, "")} -->`).join("\n    ");
+  return "";
 }
 
 function escapeHtml(value) {
@@ -476,7 +477,7 @@ Disallow: /api/`,
     )
     .join("\n\n");
   return `# Red Patronus (${SITE.url}/)
-# AI crawlers are allowed. Nothing in the repo previously blocked them.
+# AI crawlers are allowed.
 # Machine-readable summary: ${SITE.url}/llms.txt
 
 ${blocks}
@@ -490,16 +491,16 @@ export function renderLlms() {
   lines.push(`# ${SITE.name}`);
   lines.push("");
   lines.push(
-    `> ${SITE.description} A limited-time special offer prices a professional penetration test at €3,000 excluding VAT. That figure is not standard pricing, and no end date is published.`,
+    `> ${SITE.description} Black Friday offer: an automated penetration test for €1,000 excluding VAT (regular price €3,000), for orders placed by 12 December 2026.`,
   );
   lines.push("");
   lines.push(
     "The website is available in English, Slovak, German, and French. Add ?lang=en, ?lang=sk, ?lang=de, or ?lang=fr. Canonical URLs do not include the lang parameter.",
   );
   lines.push("");
-  lines.push("## Key facts published on the site");
+  lines.push("## Company");
   lines.push("");
-  lines.push(`- Brand name: ${SITE.name}. Legal name: ${SITE.legalName}.`);
+  lines.push(`- Brand name: ${SITE.name}. Legal name: ${SITE.legalName}`);
   lines.push(`- IČO: ${SITE.ico}. DIČ: ${SITE.dic}. VAT ID: ${SITE.vatId}.`);
   lines.push(`- Founded: ${SITE.foundingDate}.`);
   lines.push(`- Email: ${SITE.email}`);
@@ -507,21 +508,16 @@ export function renderLlms() {
   lines.push(
     `- Office: ${SITE.address.street}, ${SITE.address.postal} ${SITE.address.locality}, ${SITE.address.countryName}.`,
   );
+  lines.push(`- Coordinates: ${SITE.geo.latitude}, ${SITE.geo.longitude}. Map: ${SITE.mapUrl}`);
   lines.push(
-    `- Coordinates: ${SITE.geo.latitude}, ${SITE.geo.longitude}. Resolved from the owner's Google Maps link (${SITE.mapUrl}), which redirects to the place pin for Mlynské nivy 48.`,
+    "- Black Friday offer (limited time): automated, unauthenticated penetration test of a web application or external infrastructure, €1,000 excluding VAT instead of €3,000. Valid for orders placed by 12 December 2026. Testing follows OWASP Top 10 and PTES. Add-ons: delivery within 24 hours for +€1,000, authenticated testing for +€1,000. If we find no vulnerability, next year's pentest is free.",
   );
+  lines.push("- We respond within 24 hours.");
   lines.push(
-    "- The site does not publish client counts, headcount, or assessment volume.",
+    "- Standards: ISO 27001 (information security), DORA (EU Digital Operational Resilience Act), NIS2 (EU network and information security directive).",
   );
-  lines.push(
-    "- Limited-time special offer, not standard pricing: professional penetration test, €3,000 excluding VAT, for a web application or external infrastructure, aligned with OWASP Top 10 and PTES. No end date is published. If no vulnerability is found, the next year's pentest is free of charge. Other service prices are not published.",
-  );
-  lines.push("- Contact page response time: within 24 hours.");
-  lines.push(
-    "- Homepage certifications and standards listed: ISO 27001 (information security), DORA (EU Digital Operational Resilience Act), NIS2 (EU network and information security directive). Certificate IDs are not published.",
-  );
-  lines.push(`- Linked profiles: ${SITE.sameAs.join(", ")}.`);
-  lines.push("- Open role: Junior Security / Infrastructure Engineer, Bratislava. Slovak listing states 1,800 EUR per month gross, full-time contractor (živnosť), suitable for graduates.");
+  lines.push(`- Profiles: ${SITE.sameAs.join(", ")}.`);
+  lines.push("- Open role: Junior Security / Infrastructure Engineer, Bratislava. 1,800 EUR per month gross, full-time contractor (živnosť), open to graduates.");
   lines.push("");
   lines.push("## Services");
   lines.push("");
@@ -533,27 +529,6 @@ export function renderLlms() {
   lines.push("");
   for (const page of publicPages().filter((entry) => entry.inSitemap !== false)) {
     lines.push(`- [${navLabel(page, "en")}](${absoluteUrl(page.path)}): ${t(page.description, "en")}`);
-  }
-  lines.push("");
-  lines.push("## Case study figures already on /case-studies");
-  lines.push("");
-  lines.push(
-    "These are engagement results printed on the case studies page. They are not company-wide totals. Confirm them before citing (see placeholders).",
-  );
-  lines.push(
-    "- Financial services, global insurance cloud move: 47 critical vulnerabilities, zero breaches during the transformation, SOC 2 Type II, 40% reduction in security incidents. Work described: 12 months of phased penetration testing, a red team engagement, and a security architecture review.",
-  );
-  lines.push(
-    "- Healthcare: 2M+ patient records secured, full HIPAA compliance, zero-trust architecture, security awareness training for 5,000 staff.",
-  );
-  lines.push(
-    "- Technology / SaaS: SOC 2 Type II, 95% vulnerability remediation rate, IPO security due diligence, ongoing red team programme.",
-  );
-  lines.push("");
-  lines.push("## Placeholders for the owner");
-  lines.push("");
-  for (const todo of OWNER_TODOS) {
-    lines.push(`- ${todo.text}`);
   }
   lines.push("");
   return lines.join("\n");
