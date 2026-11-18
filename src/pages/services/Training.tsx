@@ -9,28 +9,28 @@ import { GraduationCap, ArrowRight, CheckCircle, Users, BookOpen, Award } from "
 
 const features = [
   {
-    title: "Compliance and Risk Reduction",
-    description: "Ensure your team is well-versed in industry regulations and best practices, helping avoid costly legal and financial repercussions.",
+    title: "Compliance and lower risk",
+    description: "Your team learns the regulations and good practice that apply to you, which helps avoid legal and financial penalties.",
   },
   {
-    title: "Enhanced Threat Awareness",
-    description: "Stay ahead of evolving cyber threats by keeping employees informed about the latest tactics used by cybercriminals.",
+    title: "Threat awareness",
+    description: "Employees learn the tactics attackers currently use.",
   },
   {
-    title: "Improved Security Practices",
-    description: "Develop a culture of vigilance by teaching practical security measures—from password management to secure device usage.",
+    title: "Practical security habits",
+    description: "Practical measures employees can apply right away, from password management to secure device use.",
   },
   {
-    title: "Safeguarding Company Assets",
+    title: "Protecting company assets",
     description: "Train employees to recognize and prevent attacks that could compromise sensitive data and intellectual property.",
   },
   {
-    title: "Regular Updates",
-    description: "Our training modules are regularly updated to reflect current trends and threat landscapes.",
+    title: "Regular updates",
+    description: "We update the training modules regularly to cover current attack techniques.",
   },
   {
-    title: "Customized Programs",
-    description: "Tailored training programs designed to address your organization's specific security challenges and industry requirements.",
+    title: "Custom programs",
+    description: "Programs built around your organization's security problems and the requirements of your industry.",
   },
 ];
 
@@ -47,14 +47,14 @@ const Training = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <GraduationCap className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">
-                  Security Training
+                  Security training
                 </span>
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-                Cybersecurity Training
+                Cybersecurity training
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-                Our comprehensive cybersecurity training program is designed to empower your employees with the essential knowledge and skills needed to detect, report, and respond to potential security threats.
+                Our cybersecurity training teaches your employees how to detect, report and respond to security threats.
               </p>
               <AnswerSummary path="/services/training" />
             </div>
@@ -90,14 +90,14 @@ const Training = () => {
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Build a Security-First Culture
+              Make security part of daily work
             </h2>
             <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              Invest in your team's security awareness and reduce the human element risk in your organization.
+              Train your team and reduce the risk that comes from human error.
             </p>
             <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90 transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <Link to="/contact">
-                Start Training Program
+                Start a training program
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

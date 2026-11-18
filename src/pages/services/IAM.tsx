@@ -9,28 +9,28 @@ import { KeyRound, ArrowRight, CheckCircle, Users, Lock, Settings } from "lucide
 
 const features = [
   {
-    title: "Okta as Centralized SSO Platform",
-    description: "Leading identity management service providing secure SSO capabilities, enabling users to access multiple applications with one set of credentials.",
+    title: "Okta as the central SSO platform",
+    description: "Okta provides single sign-on, so users reach multiple applications with one set of credentials.",
   },
   {
-    title: "Active Directory Integration",
-    description: "Flexibility to incorporate Active Directory as an Identity Provider or any other preferred IdP for seamless authentication.",
+    title: "Active Directory integration",
+    description: "Use Active Directory or any other IdP you prefer as the identity provider.",
   },
   {
-    title: "Terraform Management",
-    description: "Infrastructure as Code approach using Terraform for consistent, repeatable, and auditable IAM configurations.",
+    title: "Managed with Terraform",
+    description: "IAM configuration kept as code in Terraform, so changes are repeatable and auditable.",
   },
   {
-    title: "CI/CD Pipeline Integration",
-    description: "Seamless integration with your existing CI/CD pipelines ensuring a robust, automated, and agile environment.",
+    title: "CI/CD pipeline integration",
+    description: "IAM changes go through your existing CI/CD pipelines and are deployed automatically.",
   },
   {
-    title: "Simplified User Experience",
-    description: "Reduced password fatigue and centralized identity management with robust security policies.",
+    title: "Simpler for users",
+    description: "Fewer passwords to remember, identities managed in one place, and consistent security policies.",
   },
   {
-    title: "Access Control Management",
-    description: "Comprehensive access control ensuring proper authentication and authorization across your organization.",
+    title: "Access control",
+    description: "Authentication and authorization rules applied across your whole organization.",
   },
 ];
 
@@ -47,14 +47,14 @@ const IAM = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <KeyRound className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">
-                  Identity Management
+                  Identity management
                 </span>
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-                Identity Access Management
+                Identity and access management
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-                We provide a comprehensive IAM as a Service solution designed to streamline your authentication processes, enhance security, and improve operational efficiency using Okta, Terraform, and CI/CD pipelines.
+                We run IAM as a service on Okta, Terraform and CI/CD pipelines, which simplifies authentication for your users and makes access easier to control.
               </p>
               <AnswerSummary path="/services/iam" />
             </div>
@@ -90,14 +90,14 @@ const IAM = () => {
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Secure Your Identity Infrastructure
+              Secure your identity infrastructure
             </h2>
             <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              Implement robust IAM solutions that scale with your organization while maintaining security.
+              Set up IAM that keeps up as your organization grows.
             </p>
             <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90 transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <Link to="/contact">
-                Get IAM Solution
+                Talk to us about IAM
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

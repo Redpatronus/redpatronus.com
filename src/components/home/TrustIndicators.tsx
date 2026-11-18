@@ -42,8 +42,8 @@ const TrustIndicators = () => {
 
   const certifications = [
     { name: "ISO 27001", descKey: "trust.certs.iso" },
-    { name: "DORA Compliant", descKey: "trust.certs.dora" },
-    { name: "NIS2 Compliant", descKey: "trust.certs.nis2" },
+    { name: "DORA compliant", descKey: "trust.certs.dora" },
+    { name: "NIS2 compliant", descKey: "trust.certs.nis2" },
   ];
 
 
@@ -100,14 +100,14 @@ const TrustIndicators = () => {
               "Moving a global insurance operation from on-premise systems to the cloud is as much a security
               programme as it is an infrastructure one. Over twelve months Red Patronus ran a phased penetration
               testing programme, a full red team engagement and a security architecture review alongside our
-              transformation — finding the issues that mattered, explaining them in business terms and staying with us
+              transformation, finding the issues that mattered, explaining them in business terms and staying with us
               until they were closed. We completed the migration with a demonstrably more resilient, DORA-aligned
               environment than the one we left behind."
             </p>
             <div className="border-t border-border pt-6">
               <div className="font-display text-base font-semibold text-foreground">Milan Padych</div>
-              <div className="font-body text-sm text-muted-foreground">COO, VIG Re — Czech Republic</div>
-              <div className="font-body text-sm text-primary mt-1">Global Insurance Company Transformation</div>
+              <div className="font-body text-sm text-muted-foreground">COO, VIG Re, Czech Republic</div>
+              <div className="font-body text-sm text-primary mt-1">Global insurance company transformation</div>
             </div>
           </div>
         )}

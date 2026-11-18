@@ -20,7 +20,7 @@ const copy: Record<Language, Copy> = {
     priceNote: "excl. VAT",
     offerNote: "Valid for orders placed by 12 December 2026.",
     bonusLabel: "Zero-findings guarantee",
-    bonus: "If we find no vulnerability, next year's pentest is on us — free of charge.",
+    bonus: "If we find no vulnerability, next year's pentest is free.",
     detailsTitle: "What's included",
     details: [
       "Automated, unauthenticated security test",

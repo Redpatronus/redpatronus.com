@@ -95,9 +95,7 @@ for (const bot of ["GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended", "A
 if (/^Disallow:\s+\/\s*$/m.test(robots)) fail("robots disallows the whole site");
 
 const llms = renderLlms();
-for (const todo of OWNER_TODOS) {
-  if (!llms.includes(todo.text)) fail(`llms.txt missing ${todo.id}`);
-}
+if (llms.includes("TODO(owner)")) fail("llms.txt contains internal owner TODOs");
 
 if (failures) {
   console.error(`${failures} SEO check(s) failed`);

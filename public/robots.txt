@@ -1,5 +1,5 @@
 # Red Patronus (https://redpatronus.com/)
-# AI crawlers are allowed. Nothing in the repo previously blocked them.
+# AI crawlers are allowed.
 # Machine-readable summary: https://redpatronus.com/llms.txt
 
 User-agent: *

@@ -14,32 +14,32 @@ const features = [
       "24/7 monitoring of your systems and networks with continuous internal security scanning and automatic web security scanning.",
   },
   {
-    title: "AI-Powered Infrastructure & Application Security",
+    title: "AI-assisted infrastructure and application security",
     description:
-      "Use AI-driven tools to continuously test your defenses, simulating real-world attacks and identifying weaknesses before adversaries do.",
+      "AI-driven tools test your defenses continuously, simulate real-world attacks and find weaknesses before attackers do.",
   },
   {
-    title: "DevSecOps Integration",
+    title: "DevSecOps integration",
     description:
-      "Seamlessly integrate security into your development lifecycle with automated security testing and continuous monitoring.",
+      "Automated security testing and continuous monitoring built into your development lifecycle.",
   },
   {
-    title: "Business Continuity Planning",
+    title: "Business continuity planning",
     description:
-      "Comprehensive planning to ensure your organization can continue operations during and after security incidents.",
+      "Plans that keep your organization running during and after a security incident.",
   },
   {
-    title: "Threat Detection & Response",
-    description: "Advanced threat detection capabilities with swift incident response to minimize potential damage.",
+    title: "Threat detection and response",
+    description: "Threat detection with fast incident response to limit the damage.",
   },
   {
-    title: "Asset & Risk Management",
+    title: "Asset and risk management",
     description:
-      "Complete visibility and management of all your digital assets with security-focused tracking and monitoring.",
+      "An inventory of your digital assets, tracked and monitored for security.",
   },
   {
-    title: "Identity Access Management",
-    description: "Robust IAM solutions to ensure proper access controls and authentication across your organization.",
+    title: "Identity and access management",
+    description: "IAM that enforces access control and authentication across your organization.",
   },
 ];
 
@@ -58,12 +58,11 @@ const DefensiveSecurity = () => {
                 <span className="font-body text-sm font-medium text-accent-foreground">Defensive Security</span>
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-                Defensive Security Services
+                Defensive security services
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-                We deliver comprehensive IT security solutions designed to safeguard your organization against evolving
-                cyber threats. Our defensive security services cover a full spectrum of protection measures—from
-                proactive security operations to continuous scanning.
+                We protect your organization day to day, from security operations and monitoring to continuous
+                scanning of your systems.
               </p>
               <AnswerSummary path="/services/defensive" />
             </div>
@@ -95,10 +94,10 @@ const DefensiveSecurity = () => {
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Strengthen Your Defenses
+              Strengthen your defenses
             </h2>
             <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              Let us help you build a robust defensive security strategy tailored to your organization's needs.
+              Tell us what you run and we will propose a defensive setup that fits it.
             </p>
             <Button
               size="lg"
@@ -107,7 +106,7 @@ const DefensiveSecurity = () => {
               className="bg-background text-primary hover:bg-background/90 transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               <Link to="/contact">
-                Get Started
+                Get started
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

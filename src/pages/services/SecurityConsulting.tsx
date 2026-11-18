@@ -10,23 +10,23 @@ import { ArrowRight, FileSearch, CheckCircle, ClipboardCheck, FileText, Shield, 
 const services = [
   {
     icon: ClipboardCheck,
-    title: "Compliance Assessment",
+    title: "Compliance assessment",
     description: "Gap analysis and readiness assessments for SOC 2, ISO 27001, PCI-DSS, HIPAA, GDPR, and other regulatory frameworks.",
   },
   {
     icon: Shield,
-    title: "Security Architecture Review",
-    description: "Comprehensive review of your security architecture, identifying weaknesses and recommending improvements.",
+    title: "Security architecture review",
+    description: "We review your security architecture, point out weaknesses and recommend improvements.",
   },
   {
     icon: FileText,
-    title: "Policy Development",
-    description: "Development of security policies, procedures, and standards tailored to your organization's needs.",
+    title: "Policy development",
+    description: "Security policies, procedures and standards written for how your organization actually works.",
   },
   {
     icon: Scale,
-    title: "Risk Assessment",
-    description: "Comprehensive risk assessments identifying, analyzing, and prioritizing security risks to your organization.",
+    title: "Risk assessment",
+    description: "We identify, analyze and prioritize the security risks your organization faces.",
   },
 ];
 
@@ -54,25 +54,25 @@ const SecurityConsulting = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <FileSearch className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">
-                  Strategic Security
+                  Strategic security
                 </span>
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-                Security Consulting Services
+                Security consulting services
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
-                Strategic security guidance to help your organization build and maintain a robust security program that meets regulatory requirements and industry best practices.
+                We help you build and run a security program that meets regulatory requirements and established industry practice.
               </p>
               <AnswerSummary path="/services/security-consulting" />
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>
                   <Link to="/contact">
-                    Schedule Consultation
+                    Schedule a consultation
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link to="/services">View All Services</Link>
+                  <Link to="/services">View all services</Link>
                 </Button>
               </div>
             </div>
@@ -84,10 +84,10 @@ const SecurityConsulting = () => {
           <div className="container mx-auto px-4 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
               <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                Consulting Services
+                Consulting services
               </h2>
               <p className="font-body text-lg text-muted-foreground">
-                Expert guidance to strengthen your security posture and achieve compliance.
+                Advice on improving your security and getting compliant.
               </p>
             </div>
 
@@ -115,10 +115,10 @@ const SecurityConsulting = () => {
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div>
                 <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                  Compliance Frameworks
+                  Compliance frameworks
                 </h2>
                 <p className="font-body text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Our team has deep expertise across a wide range of compliance frameworks and can help you achieve and maintain certifications.
+                  We work with the frameworks below and help you get certified and stay certified.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   {frameworks.map((framework, index) => (
@@ -131,7 +131,7 @@ const SecurityConsulting = () => {
               </div>
               <div className="bg-card rounded-2xl p-8 lg:p-10 shadow-card border border-border">
                 <h3 className="font-display text-xl font-semibold text-foreground mb-6">
-                  Engagement Deliverables
+                  Engagement deliverables
                 </h3>
                 <ul className="space-y-4">
                   {[
@@ -158,14 +158,14 @@ const SecurityConsulting = () => {
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Need Strategic Security Guidance?
+              Need strategic security advice?
             </h2>
             <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              Let our experts help you build a security program that meets your business objectives.
+              We can help you build a security program that supports your business goals.
             </p>
             <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90">
               <Link to="/contact">
-                Get Started
+                Get started
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

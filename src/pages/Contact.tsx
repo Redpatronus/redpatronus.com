@@ -1,6 +1,5 @@
 import { useState } from "react";
 import PageSeo from "@/components/seo/PageSeo";
-import AnswerSummary from "@/components/seo/AnswerSummary";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import PageFacts from "@/components/seo/PageFacts";
 import Layout from "@/components/layout/Layout";
@@ -125,7 +124,6 @@ const Contact = () => {
             <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
               {t("contact.heroSubtitle")}
             </p>
-            <AnswerSummary path="/contact" align="center" />
           </div>
         </section>
 

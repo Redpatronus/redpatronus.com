@@ -9,32 +9,32 @@ import { ClipboardCheck, ArrowRight, CheckCircle, FileText, Scale, Search } from
 
 const features = [
   {
-    title: "DORA Compliance",
-    description: "Full alignment with Digital Operational Resilience Act requirements, ensuring your financial services organization meets EU regulatory standards for ICT risk management.",
+    title: "DORA compliance",
+    description: "We map your ICT risk management against the Digital Operational Resilience Act so your financial services organization meets the EU requirements.",
   },
   {
-    title: "Proven Expertise, Global Standards",
-    description: "We leverage internationally recognized benchmarks like CIS, NIST 2, and DORA to build a robust compliance framework aligned with EU regulations.",
+    title: "Recognized benchmarks",
+    description: "We build your compliance framework on established benchmarks such as CIS, NIST 2 and DORA, aligned with EU regulation.",
   },
   {
-    title: "Tailored to Your Needs",
-    description: "Fully customizable services to address your specific challenges, whether you're a small enterprise or a multinational corporation.",
+    title: "Scoped to your organization",
+    description: "We scope each engagement to your situation, whether you are a small company or a multinational.",
   },
   {
-    title: "Proactive Risk Management",
-    description: "Identify and mitigate ICT risks before they become threats with our comprehensive DORA-aligned assessment approach.",
+    title: "ICT risk management",
+    description: "Find and reduce ICT risks early with a DORA-aligned assessment.",
   },
   {
     title: "GAP Analysis",
-    description: "Detailed gap analysis to identify where your current security posture falls short of DORA and other compliance requirements.",
+    description: "A detailed gap analysis showing where your current controls fall short of DORA and other requirements.",
   },
   {
-    title: "Audit Support",
-    description: "Complete audit support and documentation to help you pass DORA compliance assessments with confidence.",
+    title: "Audit support",
+    description: "Audit support and documentation for your DORA compliance assessments.",
   },
   {
-    title: "Business Continuity Plan",
-    description: "We help you design, implement, and annually test your ICT business continuity and disaster recovery plans — meeting DORA's strict requirement to validate all plans at least once a year.",
+    title: "Business continuity plan",
+    description: "We help you design, implement, and annually test your ICT business continuity and disaster recovery plans. DORA requires every plan to be tested at least once a year.",
   },
 ];
 
@@ -51,14 +51,14 @@ const Compliance = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <ClipboardCheck className="h-4 w-4 text-primary" />
                 <span className="font-body text-sm font-medium text-accent-foreground">
-                  Compliance Services
+                  Compliance services
                 </span>
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-                Compliance and Regulation / Audits
+                Compliance, regulation and audits
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-                Our services are delivered by the book of DORA (Digital Operational Resilience Act) compliance. We help your organization not only meet but exceed stringent standards with our innovative blend of traditional assessments, GAP analysis, and ICT risk management methodologies.
+                We work by the book of DORA (Digital Operational Resilience Act). We combine traditional assessments, gap analysis and ICT risk management to get your organization compliant.
               </p>
               <AnswerSummary path="/services/compliance" />
             </div>
@@ -94,14 +94,14 @@ const Compliance = () => {
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Achieve Compliance Excellence
+              Get ready for your next audit
             </h2>
             <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              Let us help you navigate complex compliance requirements and achieve your regulatory goals.
+              Tell us which regulations apply to you and we will plan the assessment.
             </p>
             <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90 transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <Link to="/contact">
-                Start Assessment
+                Start an assessment
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

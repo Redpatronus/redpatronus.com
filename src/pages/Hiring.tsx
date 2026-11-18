@@ -12,10 +12,10 @@ const Hiring = () => {
   const { language } = useLanguage();
   const isSK = language === "sk";
 
-  const pageTitle = isSK ? "Otvorené pozície" : "Open Positions";
+  const pageTitle = isSK ? "Otvorené pozície" : "Open positions";
   const pageLead = isSK
     ? "Pridaj sa k malému tímu, ktorý rieši reálne veci v kybernetickej bezpečnosti."
-    : "Join a small team solving real-world problems in cybersecurity.";
+    : "Join a small team working on real cybersecurity problems.";
 
   const positionTitle = "Junior Security / Infrastructure Engineer";
   const employment = isSK
@@ -165,7 +165,7 @@ const SlovakDescription = () => (
       ozvi sa nám.
     </p>
     <p>
-      + možnosť stáže — podľa nového vysokoškolského zákona môže študent absolvovať záverečnú
+      + možnosť stáže: podľa nového vysokoškolského zákona môže študent absolvovať záverečnú
       stáž aj formou práce na pracovisku, ak táto práca zodpovedá jeho študijnému programu a je
       schválená vysokou školou.
     </p>
@@ -189,8 +189,7 @@ const SlovakDescription = () => (
         technickú prácu.
       </li>
       <li>
-        <strong>Bleeding-edge technológie:</strong> Security v spojení s AI nie je len buzzword,
-        ale tvoja denná agenda.
+        <strong>Najnovšie technológie:</strong> Security v spojení s AI je tvoja denná práca.
       </li>
       <li>
         <strong>Neformálna atmosféra:</strong> Sme malý tím, všetci si tykáme a veci riešime
@@ -201,9 +200,8 @@ const SlovakDescription = () => (
     <SectionHeading>O spoločnosti</SectionHeading>
     <p>
       Sme stabilná, rýdzo slovenská technologická spoločnosť (na trhu od roku 2005), ktorá sa
-      špecializuje na hĺbkovú analýzu bezpečnosti a IT infraštruktúru. Sme malý, vysoko efektívny
-      tím, ktorému sa darí rýchlo rásť vďaka odbornosti a priamemu prístupu k riešeniu problémov.
-      Zameriavame sa na kybernetickú bezpečnosť, threat hunting a implementáciu moderných
+      špecializuje na hĺbkovú analýzu bezpečnosti a IT infraštruktúru. Sme malý tím s priamym
+      prístupom k riešeniu problémov. Zameriavame sa na kybernetickú bezpečnosť, threat hunting a implementáciu moderných
       cloudových technológií.
     </p>
 
@@ -211,7 +209,7 @@ const SlovakDescription = () => (
     <p>
       <strong>Vzdelanie:</strong> vysokoškolské II. alebo III. stupňa
       <br />
-      <strong>Jazyk:</strong> Anglický jazyk — pokročilý (C1)
+      <strong>Jazyk:</strong> Anglický jazyk, pokročilý (C1)
       <br />
       <strong>Vhodné pre absolventa:</strong> Áno
     </p>
@@ -236,8 +234,8 @@ const EnglishDescription = () => (
 
     <SectionHeading>What you'll do</SectionHeading>
     <p>
-      You'll work on real things — analyzing logs, hunting anomalies, and understanding what is
-      happening in the environment. Not watching someone else do it, but doing it yourself, with
+      You'll work on real things: analyzing logs, hunting anomalies and understanding what is
+      happening in the environment. You do it yourself instead of watching someone else, with
       support from people who already have the practice.
     </p>
 
@@ -250,8 +248,8 @@ const EnglishDescription = () => (
 
     <SectionHeading>The interview</SectionHeading>
     <p>
-      You'll get an assignment and build a simple lab environment in Azure — a VM or cluster, a
-      firewall, and logging — and write short documentation for it.
+      You'll get an assignment and build a simple lab environment in Azure (a VM or cluster, a
+      firewall and logging) and write short documentation for it.
     </p>
     <p>
       You're free to use AI, but expect us to talk about it and ask why you did things the way
@@ -268,7 +266,7 @@ const EnglishDescription = () => (
     <SectionHeading>What's in it for you</SectionHeading>
     <p>
       You'll work on things that will still be relevant in several years. Infrastructure security
-      and AI penetration testing are not areas that will disappear tomorrow — quite the opposite.
+      and AI penetration testing are not going away. If anything, they are growing.
     </p>
 
     <SectionHeading>About us</SectionHeading>
@@ -278,7 +276,7 @@ const EnglishDescription = () => (
       will be expected of you, reach out.
     </p>
     <p>
-      Internships welcome — under the new higher-education law a student can complete their
+      Internships are welcome. Under the new higher-education law a student can complete their
       final internship as work at our site if it matches their study program and is approved by
       the university.
     </p>
@@ -286,7 +284,7 @@ const EnglishDescription = () => (
     <SectionHeading>Benefits</SectionHeading>
     <ul className="list-disc pl-6 space-y-2">
       <li>
-        <strong>Real mentoring:</strong> you're not on your own — you learn directly from
+        <strong>Real mentoring:</strong> you're not on your own, you learn directly from
         experienced practitioners.
       </li>
       <li>
@@ -301,8 +299,7 @@ const EnglishDescription = () => (
         <strong>No unnecessary meetings:</strong> minimal admin, maximum time for technical work.
       </li>
       <li>
-        <strong>Bleeding-edge tech:</strong> security combined with AI is your daily agenda, not
-        a buzzword.
+        <strong>Current tech:</strong> security combined with AI is your daily work.
       </li>
       <li>
         <strong>Informal atmosphere:</strong> small team, first-name basis, direct conversations.
@@ -313,7 +310,7 @@ const EnglishDescription = () => (
     <p>
       <strong>Education:</strong> Master's or PhD level
       <br />
-      <strong>Language:</strong> English — Advanced (C1)
+      <strong>Language:</strong> English, advanced (C1)
       <br />
       <strong>Suitable for graduates:</strong> Yes
     </p>

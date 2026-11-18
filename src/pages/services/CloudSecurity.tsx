@@ -10,25 +10,25 @@ import { ArrowRight, Cloud, CheckCircle, Server, Lock, Container, Settings } fro
 const capabilities = [
   {
     icon: Settings,
-    title: "Cloud Configuration Audit",
+    title: "Cloud configuration audit",
     description:
-      "Comprehensive review of cloud environment configurations against CIS benchmarks and security best practices.",
+      "We review your cloud configuration against CIS benchmarks and established security practice.",
   },
   {
     icon: Lock,
-    title: "IAM Policy Assessment",
+    title: "IAM policy assessment",
     description:
-      "Analysis of identity and access management policies to ensure least privilege and proper access controls.",
+      "We check identity and access management policies for least privilege and correct access controls.",
   },
   {
     icon: Container,
-    title: "Container Security",
+    title: "Container security",
     description:
       "Security assessment of containerized environments including Docker, Kubernetes, and container orchestration platforms.",
   },
   {
     icon: Server,
-    title: "DevSecOps Integration",
+    title: "DevSecOps integration",
     description:
       "Integrate security into your CI/CD pipeline with automated security testing and vulnerability scanning.",
   },
@@ -52,25 +52,24 @@ const CloudSecurity = () => {
               <Breadcrumbs path="/services/cloud-security" />
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <Cloud className="h-4 w-4 text-primary" />
-                <span className="font-body text-sm font-medium text-accent-foreground">Cloud Security</span>
+                <span className="font-body text-sm font-medium text-accent-foreground">Cloud security</span>
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-                Cloud Security Services
+                Cloud security services
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
-                Secure your cloud infrastructure with comprehensive security assessments designed for AWS, Azure, and
-                GCP environments.
+                Security assessments of your AWS, Azure and GCP environments, with findings you can fix.
               </p>
               <AnswerSummary path="/services/cloud-security" />
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>
                   <Link to="/contact">
-                    Assess Your Cloud
+                    Assess your cloud
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link to="/services">View All Services</Link>
+                  <Link to="/services">View all services</Link>
                 </Button>
               </div>
             </div>
@@ -82,10 +81,10 @@ const CloudSecurity = () => {
           <div className="container mx-auto px-4 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
               <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                Cloud Security Capabilities
+                Cloud security capabilities
               </h2>
               <p className="font-body text-lg text-muted-foreground">
-                Comprehensive cloud security services for modern enterprise environments.
+                What we test in your cloud environment.
               </p>
             </div>
 
@@ -107,9 +106,9 @@ const CloudSecurity = () => {
         <section className="py-16 lg:py-24 bg-surface">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-              <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">Supported Platforms</h2>
+              <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">Supported platforms</h2>
               <p className="font-body text-lg text-muted-foreground">
-                Deep expertise across all major cloud platforms and their services.
+                We work with the major cloud platforms and the services below.
               </p>
             </div>
 
@@ -138,10 +137,10 @@ const CloudSecurity = () => {
           <div className="container mx-auto px-4 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div>
-                <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-6">What's Included</h2>
+                <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-6">What's included</h2>
                 <p className="font-body text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Our cloud security assessments provide comprehensive coverage of your cloud environment with
-                  actionable remediation guidance.
+                  The assessment covers your cloud environment end to end and comes with practical remediation
+                  guidance.
                 </p>
                 <div className="space-y-3">
                   {[
@@ -160,7 +159,7 @@ const CloudSecurity = () => {
                 </div>
               </div>
               <div className="bg-primary rounded-2xl p-8 lg:p-10 text-primary-foreground">
-                <h3 className="font-display text-xl font-semibold mb-6">Assessment Deliverables</h3>
+                <h3 className="font-display text-xl font-semibold mb-6">Assessment deliverables</h3>
                 <ul className="space-y-4">
                   {[
                     "Cloud security posture report",
@@ -186,14 +185,14 @@ const CloudSecurity = () => {
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Secure Your Cloud Environment
+              Secure your cloud environment
             </h2>
             <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              Get a comprehensive assessment of your cloud security posture today.
+              Find out where your cloud setup is exposed and how to fix it.
             </p>
             <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90">
               <Link to="/contact">
-                Start Assessment
+                Start an assessment
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

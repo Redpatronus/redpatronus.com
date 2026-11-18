@@ -113,7 +113,7 @@ const IpReputation = () => {
                     <tr className="font-body text-xs uppercase tracking-wider text-muted-foreground">
                       <th className="px-4 py-3">IP address</th>
                       <th className="px-4 py-3">Verdict</th>
-                      <th className="px-4 py-3">DETAIL</th>
+                      <th className="px-4 py-3">Detail</th>
                       <th className="px-4 py-3">Blocklists</th>
                       <th className="px-4 py-3">Last seen</th>
                     </tr>
@@ -136,7 +136,7 @@ const IpReputation = () => {
                             {r.greynoise.noise || r.greynoise.riot ? (
                               <>
                                 {r.greynoise.classification ?? (r.greynoise.riot ? "common service" : "observed")}
-                                {r.greynoise.name ? ` — ${r.greynoise.name}` : ""}
+                                {r.greynoise.name ? `, ${r.greynoise.name}` : ""}
                                 {r.greynoise.link && (
                                   <span className="block text-primary/60 text-xs italic mt-1">
                                     Source: Verified scanner
@@ -156,7 +156,7 @@ const IpReputation = () => {
                                   .join(", ")}
                           </td>
                           <td className="px-4 py-4 font-body text-sm text-muted-foreground">
-                            {r.greynoise.lastSeen ?? "—"}
+                            {r.greynoise.lastSeen ?? "n/a"}
                           </td>
                         </tr>
                       );
